@@ -1,0 +1,2326 @@
+{
+  "schemaVersion": 1,
+  "baseline": "bc97c25",
+  "accounts": [
+    {
+      "id": "demo-system-user-admin-v1",
+      "name": "管理员账号（演示）",
+      "account": "demo.admin",
+      "role": "admin"
+    },
+    {
+      "id": "demo-system-user-finance-v1",
+      "name": "财务部门账号（演示）",
+      "account": "demo.finance",
+      "role": "finance"
+    },
+    {
+      "id": "demo-system-user-inventory-v1",
+      "name": "实车业务账号（演示）",
+      "account": "demo.inventory",
+      "role": "inventory"
+    },
+    {
+      "id": "demo-system-user-customs-v1",
+      "name": "关务业务账号（演示）",
+      "account": "demo.customs",
+      "role": "customs"
+    },
+    {
+      "id": "demo-system-user-documents-v1",
+      "name": "手续业务账号（演示）",
+      "account": "demo.documents",
+      "role": "documents"
+    },
+    {
+      "id": "demo-system-user-data-admin-v1",
+      "name": "主数据业务账号（演示）",
+      "account": "demo.data-admin",
+      "role": "data-admin"
+    },
+    {
+      "id": "demo-import-operations-carrier-xybc",
+      "name": "新韵博超承运商（演示）",
+      "account": "demo-carrier-xybc",
+      "role": "carrier"
+    },
+    {
+      "id": "demoHomepageCatalogUser",
+      "name": "主数据维护账号（合成）",
+      "account": "demo.homepage.data-admin",
+      "role": "data-admin"
+    }
+  ],
+  "pages": [
+    {
+      "id": "task-dashboard",
+      "title": "我的工作",
+      "route": {
+        "page": "dashboard"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "write",
+        "customs": "write",
+        "documents": "write",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/task-dashboard.json.gz"
+    },
+    {
+      "id": "import-coordination-overview",
+      "title": "协同总览",
+      "route": {
+        "page": "import-coordination"
+      },
+      "roleAccess": {
+        "admin": "read",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-coordination-overview.json.gz"
+    },
+    {
+      "id": "business-bl",
+      "title": "进口提单",
+      "route": {
+        "page": "bills"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-bl.json.gz"
+    },
+    {
+      "id": "business-vehicle",
+      "title": "车辆",
+      "route": {
+        "page": "business",
+        "bucket": "vehicles"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-vehicle.json.gz"
+    },
+    {
+      "id": "vehicle-document-exports",
+      "title": "单证生成与导出",
+      "route": {
+        "page": "vehicle-document-exports"
+      },
+      "roleAccess": {
+        "admin": "read",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/vehicle-document-exports.json.gz"
+    },
+    {
+      "id": "business-contract",
+      "title": "合同台账",
+      "route": {
+        "page": "business",
+        "bucket": "contracts",
+        "contractForm": "ALL"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-contract.json.gz"
+    },
+    {
+      "id": "business-execution",
+      "title": "订单台账",
+      "route": {
+        "page": "business",
+        "bucket": "orders"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-execution.json.gz"
+    },
+    {
+      "id": "customs-work",
+      "title": "报关台账",
+      "route": {
+        "page": "customs",
+        "section": "work"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "write",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/customs-work.json.gz"
+    },
+    {
+      "id": "customs-taxes",
+      "title": "税单记录",
+      "route": {
+        "page": "customs",
+        "section": "taxes"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "none",
+        "customs": "write",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/customs-taxes.json.gz"
+    },
+    {
+      "id": "business-compliance",
+      "title": "合规检查",
+      "route": {
+        "page": "catalog",
+        "module": "F13",
+        "selectedCode": "compliance"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "write",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-compliance.json.gz"
+    },
+    {
+      "id": "receipt-payment-management",
+      "title": "收付计划",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-plans"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/receipt-payment-management.json.gz"
+    },
+    {
+      "id": "bill-payment-registration",
+      "title": "登记收付",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-execution"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/bill-payment-registration.json.gz"
+    },
+    {
+      "id": "monthly-logistics-plans",
+      "title": "月度收款计划",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "monthly-logistics"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/monthly-logistics-plans.json.gz"
+    },
+    {
+      "id": "tax-payment-confirmation",
+      "title": "实缴登记",
+      "route": {
+        "page": "tax-payments"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/tax-payment-confirmation.json.gz"
+    },
+    {
+      "id": "invoice-management",
+      "title": "发票管理",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "invoices"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/invoice-management.json.gz"
+    },
+    {
+      "id": "billing-management",
+      "title": "账单管理",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "billing"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/billing-management.json.gz"
+    },
+    {
+      "id": "prepayment-management",
+      "title": "预付单管理",
+      "route": {
+        "page": "prepayments"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/prepayment-management.json.gz"
+    },
+    {
+      "id": "guarantee-management",
+      "title": "保函管理",
+      "route": {
+        "page": "guarantees",
+        "tab": "files"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/guarantee-management.json.gz"
+    },
+    {
+      "id": "financial-stock-management",
+      "title": "财务库存管理",
+      "route": {
+        "page": "financial-stock",
+        "tab": "balances"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/financial-stock-management.json.gz"
+    },
+    {
+      "id": "port-operations",
+      "title": "港口卸货与交接",
+      "route": {
+        "page": "port-operations"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/port-operations.json.gz"
+    },
+    {
+      "id": "inventory-management",
+      "title": "仓储台账",
+      "route": {
+        "page": "inventory-management",
+        "view": "stock"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-management.json.gz"
+    },
+    {
+      "id": "task-management",
+      "title": "检查结果与整备",
+      "route": {
+        "page": "inventory-management",
+        "view": "inspection"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/task-management.json.gz"
+    },
+    {
+      "id": "inventory-count",
+      "title": "库存盘点",
+      "route": {
+        "page": "inventory-management",
+        "view": "count"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-count.json.gz"
+    },
+    {
+      "id": "shipping-instruction-management",
+      "title": "发运指令管理",
+      "route": {"page": "warehouse-shipping", "section": "instructions"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/shipping-instruction-management.json"
+    },
+    {
+      "id": "inbound-vehicle-list",
+      "title": "已入库列表",
+      "route": {"page": "warehouse-shipping", "section": "inbound"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/inbound-vehicle-list.json"
+    },
+    {
+      "id": "warehouse-documents",
+      "title": "入库出库台账",
+      "route": {"page": "warehouse-shipping", "section": "documents"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"read","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/warehouse-documents.json"
+    },
+    {
+      "id": "pending-shipment-vehicles",
+      "title": "待发运车辆管理",
+      "route": {"page": "warehouse-shipping", "section": "pending"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/pending-shipment-vehicles.json"
+    },
+    {
+      "id": "vehicle-inventory",
+      "title": "车辆盘点",
+      "route": {"page": "warehouse-control", "section": "vehicle-inventory"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/vehicle-inventory.json"
+    },
+    {
+      "id": "key-inventory",
+      "title": "钥匙盘点",
+      "route": {"page": "warehouse-control", "section": "key-inventory"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/key-inventory.json"
+    },
+    {
+      "id": "key-usage-ledger",
+      "title": "钥匙领用台账",
+      "route": {"page": "warehouse-control", "section": "key-usage-ledger"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/key-usage-ledger.json"
+    },
+    {
+      "id": "shipping-report",
+      "title": "发运报表",
+      "route": {"page": "warehouse-control", "section": "shipping-report"},
+      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"read","documents":"none","data-admin":"read","carrier":"none"},
+      "url": "/demo/fidelity/pages/shipping-report.json"
+    },
+    {
+      "id": "warehouse-settlements",
+      "title": "仓储账单与特殊业务",
+      "route": {"page": "warehouse-control", "section": "settlements"},
+      "roleAccess": {"admin":"write","finance":"write","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "url": "/demo/fidelity/pages/warehouse-settlements.json"
+    },
+    {
+      "id": "delivery-management",
+      "title": "运输管理",
+      "route": {
+        "page": "inventory-management",
+        "view": "deliveries"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/delivery-management.json.gz"
+    },
+    {
+      "id": "inventory-resources",
+      "title": "物流合作方与资源",
+      "route": {
+        "page": "inventory-management",
+        "view": "resources"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-resources.json.gz"
+    },
+    {
+      "id": "inventory-damage",
+      "title": "质损与维修",
+      "route": {
+        "page": "inventory-management",
+        "view": "damage"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-damage.json.gz"
+    },
+    {
+      "id": "inventory-claims",
+      "title": "索赔管理",
+      "route": {
+        "page": "inventory-management",
+        "view": "claims"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-claims.json.gz"
+    },
+    {
+      "id": "inventory-documents",
+      "title": "进口手续台账",
+      "route": {
+        "page": "inventory-management",
+        "view": "documents"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "write",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-documents.json.gz"
+    },
+    {
+      "id": "coc-documents",
+      "title": "COC编号匹配与确认",
+      "route": {
+        "page": "coc-documents"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "write",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/coc-documents.json.gz"
+    },
+    {
+      "id": "business-unit",
+      "title": "业务组织",
+      "route": {
+        "page": "catalog",
+        "module": "F01",
+        "selectedCode": "unit"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-unit.json.gz"
+    },
+    {
+      "id": "business-partner",
+      "title": "客商",
+      "route": {
+        "page": "business",
+        "bucket": "partners"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-partner.json.gz"
+    },
+    {
+      "id": "business-country",
+      "title": "国别／省份字典",
+      "route": {
+        "page": "catalog",
+        "module": "F01",
+        "selectedCode": "country"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-country.json.gz"
+    },
+    {
+      "id": "business-model",
+      "title": "品牌车型",
+      "route": {
+        "page": "business",
+        "bucket": "models"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-model.json.gz"
+    },
+    {
+      "id": "business-project",
+      "title": "财务项目",
+      "route": {
+        "page": "catalog",
+        "module": "F01",
+        "selectedCode": "project"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-project.json.gz"
+    },
+    {
+      "id": "business-warehouse",
+      "title": "仓库库位",
+      "route": {
+        "page": "catalog",
+        "module": "F01",
+        "selectedCode": "warehouse"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-warehouse.json.gz"
+    },
+    {
+      "id": "business-port",
+      "title": "港口字典",
+      "route": {
+        "page": "business",
+        "bucket": "ports"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-port.json.gz"
+    },
+    {
+      "id": "task-rule-settings",
+      "title": "预警规则",
+      "route": {
+        "page": "dashboard",
+        "taskSettings": true
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/task-rule-settings.json.gz"
+    },
+    {
+      "id": "business-invoice_profile",
+      "title": "开票组合配置",
+      "route": {
+        "page": "catalog",
+        "module": "F09",
+        "selectedCode": "invoice_profile"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-invoice_profile.json.gz"
+    },
+    {
+      "id": "business-fee_item",
+      "title": "费用项目",
+      "route": {
+        "page": "fee-config",
+        "kind": "fee_item"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-fee_item.json.gz"
+    },
+    {
+      "id": "business-fee_binding",
+      "title": "费用适用配置",
+      "route": {
+        "page": "fee-config",
+        "kind": "fee_binding"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-fee_binding.json.gz"
+    },
+    {
+      "id": "business-funding_rate",
+      "title": "利率汇率设定",
+      "route": {
+        "page": "funding-rates"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-funding_rate.json.gz"
+    },
+    {
+      "id": "monthly-collection-configuration",
+      "title": "月度收款配置",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "monthly-config"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/monthly-collection-configuration.json.gz"
+    },
+    {
+      "id": "business-import_batch",
+      "title": "批量数据导入",
+      "route": {
+        "page": "historical-import"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "write",
+        "customs": "write",
+        "documents": "write",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-import_batch.json.gz"
+    },
+    {
+      "id": "business-integration",
+      "title": "接口接收／回传",
+      "route": {
+        "page": "integration-records"
+      },
+      "roleAccess": {
+        "admin": "read",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-integration.json.gz"
+    },
+    {
+      "id": "business-user",
+      "title": "账号与角色",
+      "route": {
+        "page": "accounts-roles"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/business-user.json.gz"
+    },
+    {
+      "id": "inventory-inbound",
+      "title": "入库管理",
+      "route": {
+        "page": "inventory-management",
+        "view": "inbound"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-inbound.json.gz"
+    },
+    {
+      "id": "inventory-outbound",
+      "title": "出库管理",
+      "route": {
+        "page": "inventory-management",
+        "view": "outbound"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-outbound.json.gz"
+    },
+    {
+      "id": "inventory-movement",
+      "title": "转仓与临时出入库",
+      "route": {
+        "page": "inventory-management",
+        "view": "movement"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-movement.json.gz"
+    },
+    {
+      "id": "document-operations",
+      "title": "手续接收与邮寄",
+      "route": {
+        "page": "document-operations"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "write",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/document-operations.json.gz"
+    },
+    {
+      "id": "document-management",
+      "title": "单证管理",
+      "route": {
+        "page": "document-management",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "read",
+        "documents": "write",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/document-management.json"
+    },
+    {
+      "id": "import-operation-port",
+      "title": "码头PI工作台",
+      "route": {
+        "page": "import-operations",
+        "section": "port",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-port.json.gz"
+    },
+    {
+      "id": "import-operation-inspection-import",
+      "title": "备检挑车",
+      "route": {
+        "page": "import-operations",
+        "section": "inspection-import",
+        "channel": "pda"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-inspection-import.json.gz"
+    },
+    {
+      "id": "import-operation-pi-completion",
+      "title": "PI完成确认",
+      "route": {
+        "page": "import-operations",
+        "section": "pi-completion",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-pi-completion.json.gz"
+    },
+    {
+      "id": "import-operation-online-queue",
+      "title": "待上线车辆",
+      "route": {
+        "page": "import-operations",
+        "section": "online-queue",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-online-queue.json.gz"
+    },
+    {
+      "id": "import-operation-customs-documents",
+      "title": "关务单证生成",
+      "route": {
+        "page": "import-operations",
+        "section": "customs-documents",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-customs-documents.json.gz"
+    },
+    {
+      "id": "import-operation-inbound-queue",
+      "title": "待入库列表",
+      "route": {
+        "page": "import-operations",
+        "section": "inbound-queue",
+        "channel": "pda"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-inbound-queue.json.gz"
+    },
+    {
+      "id": "import-operation-cal",
+      "title": "CAL检测",
+      "route": {
+        "page": "import-operations",
+        "section": "cal",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-cal.json.gz"
+    },
+    {
+      "id": "import-operation-warehouse-documents",
+      "title": "入库/出库单据",
+      "route": {
+        "page": "import-operations",
+        "section": "warehouse-documents",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-warehouse-documents.json.gz"
+    },
+    {
+      "id": "import-operation-short-haul",
+      "title": "短驳作业",
+      "route": {
+        "page": "import-operations",
+        "section": "short-haul",
+        "channel": "pda"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-short-haul.json.gz"
+    },
+    {
+      "id": "import-operation-carrier-assignment",
+      "title": "承运商分配复核",
+      "route": {
+        "page": "import-operations",
+        "section": "carrier-assignment",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-carrier-assignment.json.gz"
+    },
+    {
+      "id": "import-operation-carrier-plan",
+      "title": "承运商运输计划",
+      "route": {
+        "page": "import-operations",
+        "section": "carrier-plan",
+        "channel": "carrier"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "write"
+      },
+      "url": "/demo/fidelity/pages/import-operation-carrier-plan.json.gz"
+    },
+    {
+      "id": "import-operation-dispatch-report",
+      "title": "运输全表",
+      "route": {
+        "page": "import-operations",
+        "section": "dispatch-report",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-dispatch-report.json.gz"
+    },
+    {
+      "id": "import-operation-d42",
+      "title": "D42报表",
+      "route": {
+        "page": "import-operations",
+        "section": "d42",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-d42.json.gz"
+    },
+    {
+      "id": "import-operation-document-issue",
+      "title": "单证制作签发",
+      "route": {
+        "page": "import-operations",
+        "section": "document-issue",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-document-issue.json.gz"
+    },
+    {
+      "id": "import-operation-certificate-query",
+      "title": "证书查询",
+      "route": {
+        "page": "import-operations",
+        "section": "certificate-query",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-certificate-query.json.gz"
+    },
+    {
+      "id": "import-operation-reports",
+      "title": "业务报表",
+      "route": {
+        "page": "import-operations",
+        "section": "reports",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-reports.json.gz"
+    },
+    {
+      "id": "import-operation-billing-confirmation",
+      "title": "费用确认",
+      "route": {
+        "page": "import-operations",
+        "section": "billing-confirmation",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-billing-confirmation.json.gz"
+    },
+    {
+      "id": "import-operation-repair-settlement",
+      "title": "维修整备理赔",
+      "route": {
+        "page": "import-operations",
+        "section": "repair-settlement",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-repair-settlement.json.gz"
+    },
+    {
+      "id": "import-operation-port-scans",
+      "title": "扫码记录",
+      "route": {
+        "page": "import-operations",
+        "section": "port",
+        "channel": "internal",
+        "view": "scans"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-port-scans.json.gz"
+    },
+    {
+      "id": "import-operation-cal-tracking",
+      "title": "CAL跟踪",
+      "route": {
+        "page": "import-operations",
+        "section": "cal",
+        "channel": "internal",
+        "view": "tracking"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-cal-tracking.json.gz"
+    },
+    {
+      "id": "import-operation-warehouse-documents-outbound",
+      "title": "出库单",
+      "route": {
+        "page": "import-operations",
+        "section": "warehouse-documents",
+        "channel": "internal",
+        "view": "outbound"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-warehouse-documents-outbound.json.gz"
+    },
+    {
+      "id": "import-operation-carrier-assignment-rules",
+      "title": "路线分配规则",
+      "route": {
+        "page": "import-operations",
+        "section": "carrier-assignment",
+        "channel": "internal",
+        "view": "rules"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/import-operation-carrier-assignment-rules.json.gz"
+    },
+    {
+      "id": "vehicle-upload-boxi",
+      "title": "上传BOXI",
+      "route": {
+        "page": "business",
+        "bucket": "vehicles",
+        "sourceKind": "BOXI"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/vehicle-upload-boxi.json.gz"
+    },
+    {
+      "id": "vehicle-upload-vista",
+      "title": "上传VISTA",
+      "route": {
+        "page": "business",
+        "bucket": "vehicles",
+        "sourceKind": "VISTA"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/vehicle-upload-vista.json.gz"
+    },
+    {
+      "id": "report-crm_partner",
+      "title": "客商主数据（CRM）",
+      "route": {
+        "page": "report",
+        "table": "crm_partner"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-crm_partner.json.gz"
+    },
+    {
+      "id": "report-contract",
+      "title": "合同台账（合同主表）",
+      "route": {
+        "page": "report",
+        "table": "contract"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-contract.json.gz"
+    },
+    {
+      "id": "report-contract_order",
+      "title": "订单台账（订单主表）",
+      "route": {
+        "page": "report",
+        "table": "contract_order"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-contract_order.json.gz"
+    },
+    {
+      "id": "report-contract_subject",
+      "title": "合同标的（合同从表）",
+      "route": {
+        "page": "report",
+        "table": "contract_subject"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-contract_subject.json.gz"
+    },
+    {
+      "id": "report-payment_plan",
+      "title": "收付计划（合同从表）",
+      "route": {
+        "page": "report",
+        "table": "payment_plan"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-payment_plan.json.gz"
+    },
+    {
+      "id": "report-pat_check",
+      "title": "合规检查从表（合同从表）",
+      "route": {
+        "page": "report",
+        "table": "pat_check"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-pat_check.json.gz"
+    },
+    {
+      "id": "report-contract_partner",
+      "title": "物流合作方（合同从表）",
+      "route": {
+        "page": "report",
+        "table": "contract_partner"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-contract_partner.json.gz"
+    },
+    {
+      "id": "report-bank_fund",
+      "title": "银行资金台账（收付款）",
+      "route": {
+        "page": "report",
+        "table": "bank_fund"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-bank_fund.json.gz"
+    },
+    {
+      "id": "report-invoice",
+      "title": "发票台账",
+      "route": {
+        "page": "report",
+        "table": "invoice"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-invoice.json.gz"
+    },
+    {
+      "id": "report-receivable_track",
+      "title": "应收跟踪台账",
+      "route": {
+        "page": "report",
+        "table": "receivable_track"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-receivable_track.json.gz"
+    },
+    {
+      "id": "report-dom_purchase",
+      "title": "国内采购台账（含国内物流运输环节）",
+      "route": {
+        "page": "report",
+        "table": "dom_purchase"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-dom_purchase.json.gz"
+    },
+    {
+      "id": "report-import_bl",
+      "title": "进口提单信息",
+      "route": {
+        "page": "report",
+        "table": "import_bl"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-import_bl.json.gz"
+    },
+    {
+      "id": "report-dom_sale",
+      "title": "国内销售台账（含国内发货环节）",
+      "route": {
+        "page": "report",
+        "table": "dom_sale"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-dom_sale.json.gz"
+    },
+    {
+      "id": "report-export_sale",
+      "title": "出口销售台账",
+      "route": {
+        "page": "report",
+        "table": "export_sale"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-export_sale.json.gz"
+    },
+    {
+      "id": "report-stock_detail",
+      "title": "实物库存明细台账",
+      "route": {
+        "page": "report",
+        "table": "stock_detail"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-stock_detail.json.gz"
+    },
+    {
+      "id": "report-tables",
+      "title": "上报表查询",
+      "route": {
+        "page": "report",
+        "table": "contract_order"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-tables.json.gz"
+    },
+    {
+      "id": "vehicle-manufacturer-data",
+      "title": "厂家原始车辆资料",
+      "route": {
+        "page": "business",
+        "bucket": "vehicles",
+        "id": "source-coc-vehicle-SALEA8EU0T2629465",
+        "initialTab": "manufacturer"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "read",
+        "inventory": "read",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "write",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/vehicle-manufacturer-data.json.gz"
+    },
+    {
+      "id": "inventory-management-history",
+      "title": "出入库历史",
+      "route": {
+        "page": "inventory-management",
+        "view": "stock",
+        "stockView": "history"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-management-history.json.gz"
+    },
+    {
+      "id": "inventory-management-ownership",
+      "title": "货权记录",
+      "route": {
+        "page": "inventory-management",
+        "view": "stock",
+        "stockView": "ownership"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-management-ownership.json.gz"
+    },
+    {
+      "id": "inventory-management-costs",
+      "title": "作业费用",
+      "route": {
+        "page": "inventory-management",
+        "view": "stock",
+        "stockView": "costs"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-management-costs.json.gz"
+    },
+    {
+      "id": "task-management-pdi",
+      "title": "PDI",
+      "route": {
+        "page": "inventory-management",
+        "view": "inspection",
+        "recordKind": "pdi"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/task-management-pdi.json.gz"
+    },
+    {
+      "id": "task-management-preparation",
+      "title": "整备",
+      "route": {
+        "page": "inventory-management",
+        "view": "inspection",
+        "recordKind": "preparation"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/task-management-preparation.json.gz"
+    },
+    {
+      "id": "task-management-maintenance",
+      "title": "定期检修",
+      "route": {
+        "page": "inventory-management",
+        "view": "inspection",
+        "recordKind": "maintenance"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/task-management-maintenance.json.gz"
+    },
+    {
+      "id": "inventory-movement-within",
+      "title": "同库移位",
+      "route": {
+        "page": "inventory-management",
+        "view": "movement",
+        "recordKind": "within"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-movement-within.json.gz"
+    },
+    {
+      "id": "inventory-movement-transfer",
+      "title": "转仓",
+      "route": {
+        "page": "inventory-management",
+        "view": "movement",
+        "recordKind": "transfer"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-movement-transfer.json.gz"
+    },
+    {
+      "id": "inventory-movement-temporary",
+      "title": "临时外出",
+      "route": {
+        "page": "inventory-management",
+        "view": "movement",
+        "recordKind": "temporary"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-movement-temporary.json.gz"
+    },
+    {
+      "id": "delivery-management-instructions",
+      "title": "配送指令",
+      "route": {
+        "page": "inventory-management",
+        "view": "deliveries",
+        "recordKind": "instructions"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/delivery-management-instructions.json.gz"
+    },
+    {
+      "id": "delivery-management-transport",
+      "title": "运输记录",
+      "route": {
+        "page": "inventory-management",
+        "view": "deliveries",
+        "recordKind": "transport"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/delivery-management-transport.json.gz"
+    },
+    {
+      "id": "inventory-resources-order_partner",
+      "title": "物流合作方",
+      "route": {
+        "page": "inventory-management",
+        "view": "resources",
+        "resourceCode": "order_partner"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-resources-order_partner.json.gz"
+    },
+    {
+      "id": "inventory-resources-transport_resource",
+      "title": "承运资源",
+      "route": {
+        "page": "inventory-management",
+        "view": "resources",
+        "resourceCode": "transport_resource"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inventory-resources-transport_resource.json.gz"
+    },
+    {
+      "id": "guarantee-management-repayments",
+      "title": "实缴提醒",
+      "route": {
+        "page": "guarantees",
+        "tab": "repayments"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/guarantee-management-repayments.json.gz"
+    },
+    {
+      "id": "guarantee-management-ledger",
+      "title": "付还明细",
+      "route": {
+        "page": "guarantees",
+        "tab": "ledger"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/guarantee-management-ledger.json.gz"
+    },
+    {
+      "id": "financial-stock-management-events",
+      "title": "财务入出库记录",
+      "route": {
+        "page": "financial-stock",
+        "tab": "events"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/financial-stock-management-events.json.gz"
+    },
+    {
+      "id": "receipt-payment-management-bill-1",
+      "title": "收付计划 · BL-20260928-018",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-plans",
+        "billId": "demoPlanDetail0"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/receipt-payment-management-bill-1.json.gz"
+    },
+    {
+      "id": "receipt-payment-management-bill-2",
+      "title": "收付计划 · BL-20260930-021",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-plans",
+        "billId": "demoPlanDetail1"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/receipt-payment-management-bill-2.json.gz"
+    },
+    {
+      "id": "receipt-payment-management-bill-3",
+      "title": "收付计划 · BL-20261001-026",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-plans",
+        "billId": "demoPlanDetail2"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/receipt-payment-management-bill-3.json.gz"
+    },
+    {
+      "id": "bill-payment-registration-bill-1",
+      "title": "登记收付款 · BL-20260928-018",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-execution",
+        "billId": "demoPlanDetail0"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/bill-payment-registration-bill-1.json.gz"
+    },
+    {
+      "id": "bill-payment-registration-bill-2",
+      "title": "登记收付款 · BL-20260930-021",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-execution",
+        "billId": "demoPlanDetail1"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/bill-payment-registration-bill-2.json.gz"
+    },
+    {
+      "id": "bill-payment-registration-bill-3",
+      "title": "登记收付款 · BL-20261001-026",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-execution",
+        "billId": "demoPlanDetail2"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/bill-payment-registration-bill-3.json.gz"
+    }
+  ],
+  "editControls": {
+    "leaveDialog": {
+      "tag": "div",
+      "props": {
+        "className": "modal-backdrop",
+        "onMouseDown": {
+          "kind": "close-leave",
+          "backdrop": true
+        }
+      },
+      "children": [
+        {
+          "tag": "section",
+          "props": {
+            "tabIndex": -1,
+            "role": "dialog",
+            "aria-modal": "true",
+            "aria-labelledby": ":capture-root_Host_r_RoleAccessProvider_r_provider_0_2_0_2_BusinessPages_r_fragment_k_contracts-demoHomepageCatalogPurchaseContract_EntityEditor_r_fragment_0_RecordPage_r_fragment_1_Modal-1:",
+            "className": "modal "
+          },
+          "children": [
+            {
+              "tag": "header",
+              "props": {
+                "className": "modal-header"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "props": {},
+                  "children": [
+                    {
+                      "tag": "h2",
+                      "props": {
+                        "id": ":capture-root_Host_r_RoleAccessProvider_r_provider_0_2_0_2_BusinessPages_r_fragment_k_contracts-demoHomepageCatalogPurchaseContract_EntityEditor_r_fragment_0_RecordPage_r_fragment_1_Modal-1:"
+                      },
+                      "children": [
+                        "尚有未保存的修改"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "button",
+                  "props": {
+                    "className": "icon-button",
+                    "aria-label": "关闭",
+                    "onClick": {
+                      "kind": "close-leave"
+                    }
+                  },
+                  "children": [
+                    {
+                      "tag": "svg",
+                      "props": {
+                        "xmlns": "http://www.w3.org/2000/svg",
+                        "width": 20,
+                        "height": 20,
+                        "fill": "currentColor",
+                        "viewBox": "0 0 256 256",
+                        "aria-hidden": "true"
+                      },
+                      "children": [
+                        {
+                          "tag": "path",
+                          "props": {
+                            "d": "M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "props": {
+                "className": "modal-body"
+              },
+              "children": [
+                {
+                  "tag": "p",
+                  "props": {},
+                  "children": [
+                    "离开后，本次未保存的内容将不会保留。"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "footer",
+              "props": {
+                "className": "modal-footer"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "props": {
+                    "type": "button",
+                    "className": "button secondary ",
+                    "onClick": {
+                      "kind": "close-leave"
+                    }
+                  },
+                  "children": [
+                    "继续编辑"
+                  ]
+                },
+                {
+                  "tag": "button",
+                  "props": {
+                    "type": "button",
+                    "className": "button primary ",
+                    "onClick": {
+                      "kind": "discard-back"
+                    }
+                  },
+                  "children": [
+                    "放弃修改并返回"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

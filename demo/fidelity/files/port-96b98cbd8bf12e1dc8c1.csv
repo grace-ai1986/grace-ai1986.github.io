@@ -1,0 +1,10 @@
+﻿港口代码,港口名称,港口国别,备注
+CNTSN,天津港,demoChina,天津港业务
+CNSHA,上海港,demoChina,上海港业务
+CNCAN,广州港,demoChina,广州港业务
+DEMOFIN,财务样例到达港（合成）,demoChina,合成演示资料，不代表真实业务或正式收费标准
+CNTSN,天津港（合成业务引用）,demoHomepageCatalogCountry,独立合成资料，仅用于本地原型评审；不代表实际客商、合同、车辆或已发生业务。
+DEMOOPS,现场样例到达港（合成）,demoHomepageOpsChina,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。
+DEMOFIN,财务样例到达港（合成）,demoChina,合成演示资料，不代表真实业务或正式收费标准
+DEMODC,单证样例到达港（合成）,demoChina,合成演示资料，仅供核对下载；不代表外部开票、签发、收付款或业务完成
+DEMODP,单证样例装运港（合成）,demoUK,合成演示资料，仅供核对下载；不代表外部开票、签发、收付款或业务完成

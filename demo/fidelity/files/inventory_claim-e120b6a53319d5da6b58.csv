@@ -1,0 +1,4 @@
+﻿VIN,本次车辆VIN,所属提单,业务订单,对应质损案件,同一索赔的上一办理记录,办理事项,索赔对象,外部索赔案件号,外部邮件反馈／认责或拒赔依据,申请赔偿金额,实际核赔金额,币种,实际办理时间,处理期限,实际处理／结案结果,真实赔款资金记录编号,实际依据,备注
+SALDEM000A0000009,"[""demoNextDocumentCompleteVehicle1""]",demoNextDocumentComplete,,demoNextQualityDamagePartial,,PREPARE,demoNextDocumentBuyer,,,,,CNY,,,,,,索赔准备草稿
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,demoNextQualityDamageComplete,,PREPARE,demoNextDocumentBuyer,,,,,CNY,,,,,,索赔准备草稿
+SALDMP000A0000001,"[""demoHomepageOpsVehicle1""]",demoHomepageOpsBill,demoHomepageOpsOrder,demoHomepageOpsDamage,,PREPARE,demoHomepageOpsCarrier,,,1500,,CNY,2026-09-15T10:00,2026-10-25,合成索赔资料整理；未外部提交、核赔或收款,,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。

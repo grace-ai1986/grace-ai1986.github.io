@@ -1,0 +1,3 @@
+﻿销售单位,采购单位,票据性质,发票方向,发票号,发票日期,发票类型,销售类型,业务类型,币种,折人民币汇率,整票含税总额,开具成功时间,备注,原订单,票据类型 DOMESTIC/COMMERCIAL/PROFORMA,真实成功开票结果,计划应用明细,财务项目名称,费用类别,税率,税额,含税折扣,不含税折扣,对应车辆VIN,发票代码,全电发票号码,原开票导出业务单据号,原票客户名称,逐车折前不含税金额,逐车不含税折扣,逐车折后不含税金额,逐车折前含税金额,逐车含税折扣,逐车折后含税金额,逐VIN原票明细,原普通发票号码
+pCompany,demoFinanceDocumentBuyer,国内销售发票,sale,DEMO-FINANCE-INVOICE,2026-10-21,合成销售发票,国内销售,代理进口,CNY,1,1000.00,,合成演示资料，不代表真实业务或正式收费标准,demoFinanceDocumentOrder,,true,,合成车辆销售费用,001,0,0,0,0,"[""demoFinanceDocumentVehicle""]",,,,,,,,,,,,
+pCompany,demoHomepageFinanceBuyer,国内销售发票,sale,DEMO-HOMEPAGE-FINANCE-INVOICE,2026-10-21,合成销售发票,国内销售,代理进口,CNY,1,1000.00,,合成演示资料，不代表真实业务或正式收费标准,demoHomepageFinanceOrder,,true,,合成车辆销售费用,001,0,0,0,0,"[""demoHomepageFinanceSaleVehicle""]",,,,,,,,,,,,

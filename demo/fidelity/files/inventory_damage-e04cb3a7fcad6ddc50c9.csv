@@ -1,0 +1,6 @@
+﻿VIN,本次车辆VIN,所属提单,业务订单,实际发现时间,发现环节,原检查结论,发现地点,问题部位,实际问题简述,处理责任方,内部处理人,预计完成日,原业务记录类型,原业务记录编号,实际依据,备注
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,2026-10-02T09:00,STORAGE,ATTENTION,,,左前车门漆面划痕（样例）,,,,,,,待建送修、索赔单
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,2026-10-02T09:00,STORAGE,ATTENTION,,,左前车门漆面划痕（样例）,,,,,,,部分车辆已建送修、索赔单
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,2026-10-02T09:00,STORAGE,ATTENTION,,,左前车门漆面划痕（样例）,,,,,,,全部车辆已建送修、索赔单
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,2026-10-02T09:00,STORAGE,ATTENTION,,,左前车门漆面划痕（样例）,,,,,,,质损草稿
+SALDMP000A0000001,"[""demoHomepageOpsVehicle1""]",demoHomepageOpsBill,demoHomepageOpsOrder,2026-09-13T09:00,STORAGE,REPAIR,B-01（合成）,前保险杠（合成）,演示划痕，库内修复并独立复验,demoHomepageOpsCarrier,演示实车员,2026-09-15,,,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。

@@ -1,0 +1,6 @@
+﻿报关单,税款收取方,税单号,税款口径／适用税种,计税基础,进口税率,海关实际税款合计／历史单税总额,海关进口增值税总额,海关消费税总额,海关关税总额,海关来源单据日期,税款期限,现金缴税周期标识,现金缴税到期日,备注,原提单,本次税款车辆
+demoCustomsLifecycleDeclaration,pCustoms,,,,,300000,100000,50000,150000,2026-10-05,,,,合成税单，仅用于演示自动占用及归还,demoCustomsLifecycleBill,"[""demoCustomsLifecycleVehicle1""]"
+demoCustomsLifecycleDeclaration,pCustoms,,,,,200000,70000,30000,100000,2026-10-05,,,,合成税单，仅用于演示自动占用及归还,demoCustomsLifecycleBill,"[""demoCustomsLifecycleVehicle2""]"
+demoCustomsLifecycleDeclaration,pCustoms,,,,,100000,40000,10000,50000,2026-09-20,,,,合成税单，仅用于演示自动占用及归还,demoCustomsLifecycleBill,"[""demoCustomsLifecycleVehicle3""]"
+demoHomepageOpsDeclaration,demoHomepageOpsCollector,,,,,78450.00,33500.00,13000.00,31950.00,2026-09-10,,,,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,demoHomepageOpsBill,"[""demoHomepageOpsVehicle1"",""demoHomepageOpsVehicle2"",""demoHomepageOpsVehicle3"",""demoHomepageOpsVehicle4""]"
+demoHomepageFinanceDeclaration,demoHomepageFinanceCustoms,,,,,30,10,5,15,2025-10-05,2025-10-20,,,合成演示资料及金额、凭证，不代表真实外部业务事实,demoHomepageFinanceTaxBill,"[""demoHomepageFinanceVehicle""]"

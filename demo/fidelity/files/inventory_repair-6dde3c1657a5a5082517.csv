@@ -1,0 +1,5 @@
+﻿VIN,本次车辆VIN,所属提单,业务订单,对应质损案件,处理事项,实际维修单位,厂家维修／处置指令依据,预计完成日,外送维修,同一实际离库／返库任务,实际修复时间,修复项目与结果,本案原实际修复记录,实际复验时间,复验结果,厂家／本方验收依据,预计维修费用,维修费用登记金额,费用币种,报价／维修费用依据,最终确认维修账单号,最终账单确认日期,最终账单已核定金额,最终账单金额核定依据,实际依据,备注
+SALDEM000A0000009,"[""demoNextDocumentCompleteVehicle1""]",demoNextDocumentComplete,,demoNextQualityDamagePartial,PLAN,,修复车门划痕并复验（样例）,2026-10-02,,,,,,,,,,,,,,,,,,送修计划草稿
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,demoNextQualityDamageComplete,PLAN,,修复车门划痕并复验（样例）,2026-10-02,,,,,,,,,,,,,,,,,,送修计划草稿
+SALDMP000A0000001,"[""demoHomepageOpsVehicle1""]",demoHomepageOpsBill,demoHomepageOpsOrder,demoHomepageOpsDamage,REPAIR,demoHomepageOpsCarrier,合成维修指令,2026-09-14,false,,2026-09-14T11:00,合成样例划痕修复,,,,,,1500,CNY,合成报价单DEMO-OPS-REPAIR,,,,,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。
+SALDMP000A0000001,"[""demoHomepageOpsVehicle1""]",demoHomepageOpsBill,demoHomepageOpsOrder,demoHomepageOpsDamage,REINSPECTION,demoHomepageOpsCarrier,,,,,,,demoHomepageOpsRepair,2026-09-15T09:00,PASS,合成复验清单,,,,,,,,,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。

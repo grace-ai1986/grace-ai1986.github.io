@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "shipping-instruction-management",
+  "title": "发运指令管理",
+  "initial": "f0",
+  "scenes": {"readonly": "f0"},
+  "frames": {
+    "f0": {
+      "tree": [
+        {"tag":"div","props":{"className":"app-shell with-sidebar"},"children":[
+          {"tag":"header","props":{"className":"app-header"},"children":[
+            {"tag":"button","props":{"className":"brand-title"},"children":["中进贸易（一部）业务系统"]},
+            {"tag":"div","props":{"className":"header-location","aria-label":"当前位置"},"children":["实车业务 / 仓储管理 / 发运指令管理"]},
+            {"tag":"div","props":{"className":"header-right"},"children":[
+              {"tag":"input","props":{"aria-label":"全局搜索","placeholder":"搜索提单、VIN、订单…"}},
+              {"tag":"span","props":{"className":"profile-button"},"children":["实车业务账号（演示）"]}
+            ]}
+          ]},
+          {"tag":"nav","props":{"className":"side-navigation","aria-label":"功能导航"},"children":[
+            {"tag":"div","props":{"className":"sidebar-menu"},"children":[
+              {"tag":"a","props":{"href":"#page=task-dashboard"},"children":["我的工作"]},
+              {"tag":"strong","props":{"className":"sidebar-section-label"},"children":["实车业务"]},
+              {"tag":"a","props":{"href":"#page=port-operations"},"children":["关务与码头"]},
+              {"tag":"strong","props":{"className":"sidebar-section-label"},"children":["仓储管理"]},
+              {"tag":"a","props":{"href":"#page=shipping-instruction-management","aria-current":"page"},"children":["发运指令管理"]},
+              {"tag":"a","props":{"href":"#page=inbound-vehicle-list"},"children":["已入库列表"]},
+              {"tag":"a","props":{"href":"#page=warehouse-documents"},"children":["仓储单据"]},
+              {"tag":"a","props":{"href":"#page=pending-shipment-vehicles"},"children":["待发运车辆管理"]},
+              {"tag":"a","props":{"href":"#page=inventory-count"},"children":["库存盘点"]}
+            ]}
+          ]},
+          {"tag":"div","props":{"className":"app-content"},"children":[
+            {"tag":"main","props":{"className":"workspace import-operations-workspace"},"children":[
+              {"tag":"div","props":{"className":"page-heading"},"children":[
+                {"tag":"div","children":[{"tag":"h1","children":["发运指令管理"]},{"tag":"p","children":["统一接收厂家系统、邮件和文件导入的发运/扣车指令，业务核对后再下发承运商。"]}]},
+                {"tag":"div","props":{"className":"page-actions"},"children":[
+                  {"tag":"button","props":{"className":"button primary"},"children":["导入厂家/邮件指令"]},
+                  {"tag":"button","props":{"className":"button secondary"},"children":["导入指令核对表"]},
+                  {"tag":"button","props":{"className":"button secondary"},"children":["新增特殊发运"]}
+                ]}
+              ]},
+              {"tag":"div","props":{"className":"notice notice-info"},"children":[{"tag":"strong","children":["系统演示数据（合成）· 非真实业务资料"]},{"tag":"span","children":[" 路虎为厂家系统指令；英力士、特斯拉为邮件/文件导入。自动分配后需业务复核，已下发且承运商未操作前可撤回。"]}]},
+              {"tag":"div","props":{"className":"workboard-summary"},"children":[
+                {"tag":"article","children":[{"tag":"strong","children":["18"]},{"tag":"span","children":["待复核指令"]},{"tag":"small","children":["路虎 12 · 特斯拉 4 · 英力士 2"]}]},
+                {"tag":"article","children":[{"tag":"strong","children":["9"]},{"tag":"span","children":["已下发承运商"]},{"tag":"small","children":["其中 1 条待承运商确认"]}]},
+                {"tag":"article","children":[{"tag":"strong","children":["2"]},{"tag":"span","children":["特殊扣车"]},{"tag":"small","children":["保留扣车原因与来源"]}]},
+                {"tag":"article","children":[{"tag":"strong","children":["3"]},{"tag":"span","children":["特殊发运"]},{"tag":"small","children":["支持无完整厂家指令建任务"]}]}
+              ]},
+              {"tag":"div","props":{"className":"filter-bar"},"children":[
+                {"tag":"input","props":{"className":"search-input","placeholder":"搜索 VIN、批次、经销商"}},
+                {"tag":"select","props":{"aria-label":"品牌"},"children":[{"tag":"option","children":["全部品牌"]},{"tag":"option","children":["捷豹路虎"]},{"tag":"option","children":["英力士"]},{"tag":"option","children":["特斯拉"]}]},
+                {"tag":"select","props":{"aria-label":"来源"},"children":[{"tag":"option","children":["全部来源"]},{"tag":"option","children":["厂家系统"]},{"tag":"option","children":["邮件/文件导入"]}]},
+                {"tag":"select","props":{"aria-label":"指令状态"},"children":[{"tag":"option","children":["全部状态"]},{"tag":"option","children":["待复核"]},{"tag":"option","children":["已确认"]},{"tag":"option","children":["已下发"]},{"tag":"option","children":["已撤回"]}]}
+              ]},
+              {"tag":"div","props":{"className":"table-wrap"},"children":[
+                {"tag":"table","props":{"className":"data-table"},"children":[
+                  {"tag":"thead","children":[{"tag":"tr","children":[{"tag":"th","children":["选择"]},{"tag":"th","children":["品牌"]},{"tag":"th","children":["批次"]},{"tag":"th","children":["提单号"]},{"tag":"th","children":["指令来源"]},{"tag":"th","children":["指令日期"]},{"tag":"th","children":["经销商/目的地"]},{"tag":"th","children":["承运商"]},{"tag":"th","children":["指令状态"]},{"tag":"th","children":["扣车/特殊发运"]},{"tag":"th","children":["操作"]}]}]},
+                  {"tag":"tbody","children":[
+                    {"tag":"tr","children":[
+                      {"tag":"td","children":[{"tag":"input","props":{"type":"checkbox","aria-label":"选择 SALKABFU5TA390743"}}]},
+                      {"tag":"td","children":["捷豹路虎"]},{"tag":"td","children":["2643"]},{"tag":"td","children":["EUKOGBCN2085358X"]},{"tag":"td","children":["厂家系统"]},{"tag":"td","children":["2026-10-09"]},{"tag":"td","children":["北京惠通陆华汽车服务有限公司"]},{"tag":"td","children":["FT"]},{"tag":"td","children":[{"tag":"span","props":{"className":"badge warning"},"children":["待复核"]}]},{"tag":"td","children":["—"]},{"tag":"td","children":[{"tag":"button","props":{"className":"button secondary","onClick":{"kind":"warehouse-instruction-detail","detailId":"jlr","record":{"brand":"捷豹路虎","batch":"2643","billNo":"EUKOGBCN2085358X","source":"厂家系统","instructionDate":"2026-10-09","dealer":"北京惠通陆华汽车服务有限公司","destination":"北京","carrier":"FT","status":"待复核","special":"—","sourceFile":"发运指令202112.xlsx"}}},"children":["查看详情"]},{"tag":"button","props":{"className":"button secondary"},"children":["核对"]}]}
+                    ]},
+                    {"tag":"tr","children":[
+                      {"tag":"td","children":[{"tag":"input","props":{"type":"checkbox","aria-label":"选择 5YJSA7E57PF509694"}}]},
+                      {"tag":"td","children":["特斯拉"]},{"tag":"td","children":["TSL-2024-12"]},{"tag":"td","children":["—"]},{"tag":"td","children":["邮件/文件导入"]},{"tag":"td","children":["2024-12-30"]},{"tag":"td","children":["APAC-CN-Tianjin-Wanggang Road"]},{"tag":"td","children":["China Automobile Trading Co. Ltd"]},{"tag":"td","children":[{"tag":"span","props":{"className":"badge blue"},"children":["已确认"]}]},{"tag":"td","children":["特殊发运"]},{"tag":"td","children":[{"tag":"button","props":{"className":"button secondary","onClick":{"kind":"warehouse-instruction-detail","detailId":"tesla","record":{"brand":"特斯拉","batch":"TSL-2024-12","billNo":"—","source":"邮件/文件导入","instructionDate":"2024-12-30","dealer":"—","destination":"APAC-CN-Tianjin-Wanggang Road","carrier":"China Automobile Trading Co. Ltd","status":"已确认","special":"特殊发运","sourceFile":"特斯拉 指令汇总.xlsx"}}},"children":["查看详情"]},{"tag":"button","props":{"className":"button secondary"},"children":["调整承运商"]}]}
+                    ]},
+                    {"tag":"tr","children":[
+                      {"tag":"td","children":[{"tag":"input","props":{"type":"checkbox","aria-label":"选择 SC6GMBUAXP0000012"}}]},
+                      {"tag":"td","children":["英力士"]},{"tag":"td","children":["INEOS-20261009"]},{"tag":"td","children":["—"]},{"tag":"td","children":["邮件/文件导入"]},{"tag":"td","children":["2026-10-09"]},{"tag":"td","children":["上海 / 售后王经理"]},{"tag":"td","children":["新韵博超（XYBC）"]},{"tag":"td","children":[{"tag":"span","props":{"className":"badge success"},"children":["已下发"]}]},{"tag":"td","children":["—"]},{"tag":"td","children":[{"tag":"button","props":{"className":"button secondary","onClick":{"kind":"warehouse-instruction-detail","detailId":"ineos","record":{"brand":"英力士","batch":"INEOS-20261009","billNo":"—","source":"邮件/文件导入","instructionDate":"2026-10-09","dealer":"售后王经理","destination":"上海","carrier":"新韵博超（XYBC）","status":"已下发","special":"—","sourceFile":"英力士发运指令-新韵博超 20261009 新增2台.xlsx"}}},"children":["查看详情"]},{"tag":"button","props":{"className":"button secondary"},"children":["撤回"]}]}
+                    ]}
+                  ]}
+                ]}
+              ]}
+              ]},
+              {"tag":"div","props":{"className":"prd-panel"},"children":[
+                {"tag":"h2","children":["分配与异常规则"]},
+                {"tag":"p","children":["系统按经销商、城市、线路和车型规则生成承运商分配草稿；业务人员可调整经销商或承运商，确认后才下发。承运商已操作的指令不能由内部直接改派，需先由承运商取消。"]},
+                {"tag":"p","children":["来源样例：发运指令202112、发运指令核对、特斯拉指令汇总、英力士发运指令-新韵博超 20261009。"]}
+              ]}
+            ]}
+          ]},
+          {"tag":"footer","props":{"className":"app-footer"},"children":["系统演示数据（合成）· 非真实业务资料"]}
+        ]
+  }
+}
+}

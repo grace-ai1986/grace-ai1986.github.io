@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "document-management",
+  "title": "单证管理",
+  "initial": "f0",
+  "scenes": {"readonly": "f0"},
+  "frames": {
+    "f0": {
+      "tree": [
+        {
+          "tag": "div",
+          "props": {"className": "app-shell with-sidebar"},
+          "children": [
+            {
+              "tag": "header",
+              "props": {"className": "app-header"},
+              "children": [
+                {"tag": "button", "props": {"className": "brand-title"}, "children": ["中进贸易（一部）业务系统"]},
+                {"tag": "div", "props": {"className": "header-location"}, "children": ["手续业务 / 单证管理"]},
+                {"tag": "span", "props": {"className": "profile-button"}, "children": ["单证管理员（演示）"]}
+              ]
+            },
+            {
+              "tag": "nav",
+              "props": {"className": "side-navigation"},
+              "children": [
+                {"tag": "div", "props": {"className": "sidebar-menu"}, "children": [
+                  {"tag": "strong", "props": {"className": "sidebar-section-label"}, "children": ["手续业务"]},
+                  {"tag": "a", "props": {"href": "#page=document-management"}, "children": ["单证管理"]},
+                  {"tag": "a", "props": {"href": "#page=document-operations"}, "children": ["历史手续台账"]}
+                ]}
+              ]
+            },
+            {
+              "tag": "div",
+              "props": {"className": "app-content"},
+              "children": [
+                {
+                  "tag": "main",
+                  "props": {"className": "workspace"},
+                  "children": [
+                    {
+                      "tag": "div",
+                      "props": {"className": "page-heading"},
+                      "children": [
+                        {"tag": "div", "children": [
+                          {"tag": "h1", "children": ["单证管理"]},
+                          {"tag": "p", "children": ["证件扫描件留存、关单签发信息表、单证邮寄和品牌证书任务统一管理。"]}
+                        ]},
+                        {"tag": "div", "props": {"className": "page-actions"}, "children": [
+                          {"tag": "button", "props": {"className": "button secondary"}, "children": ["上传证件扫描件"]},
+                          {"tag": "button", "props": {"className": "button primary"}, "children": ["生成关单签发信息表"]}
+                        ]}
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "props": {"className": "notice notice-info"},
+                      "children": [
+                        {"tag": "strong", "children": ["系统演示数据（合成）· 非真实业务资料"]},
+                        {"tag": "span", "children": [" 字段依据：单证结余表-JLR、两证回执模板-JLR、顺丰快递签打印模板-JLR、邮寄记录模板-JLR、2600JLR关单签发信息.doc。"]}
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "props": {"className": "inventory-view-tabs"},
+                      "children": [
+                        {"tag": "button", "props": {"aria-selected": true}, "children": ["证件档案（3）"]},
+                        {"tag": "button", "props": {"aria-selected": false}, "children": ["关单签发信息表（2）"]},
+                        {"tag": "button", "props": {"aria-selected": false}, "children": ["单证邮寄管理（2）"]},
+                        {"tag": "button", "props": {"aria-selected": false}, "children": ["沃尔沃合格证（1）"]}
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "props": {"className": "preview-card"},
+                      "children": [
+                        {"tag": "div", "props": {"className": "page-heading"}, "children": [
+                          {"tag": "div", "children": [{"tag": "h2", "children": ["证件档案"]}, {"tag": "p", "children": ["环保证书、一致性证书、货物进口证明书均按 VIN 留存电子扫描件。"]}]},
+                          {"tag": "div", "props": {"className": "page-actions"}, "children": [{"tag": "button", "props": {"className": "button secondary"}, "children": ["批量上传扫描件"]}]}
+                        ]},
+                        {"tag": "div", "props": {"className": "filter-bar"}, "children": [
+                          {"tag": "input", "props": {"placeholder": "VIN、提单号、报关单号"}},
+                          {"tag": "select", "props": {"aria-label": "证件类型"}, "children": [{"tag": "option", "children": ["全部证件"]}, {"tag": "option", "children": ["环保证书"]}, {"tag": "option", "children": ["一致性证书"]}, {"tag": "option", "children": ["货物进口证明书"]}]},
+                          {"tag": "select", "props": {"aria-label": "扫描件状态"}, "children": [{"tag": "option", "children": ["全部状态"]}, {"tag": "option", "children": ["已上传"]}, {"tag": "option", "children": ["待上传"]}]},
+                          {"tag": "button", "props": {"className": "button secondary"}, "children": ["筛选"]}
+                        ]},
+                        {"tag": "div", "props": {"className": "table-wrap"}, "children": [{"tag": "table", "props": {"className": "data-table"}, "children": [
+                          {"tag": "thead", "children": [{"tag": "tr", "children": [{"tag": "th", "children": ["VIN"]}, {"tag": "th", "children": ["品牌"]}, {"tag": "th", "children": ["提单号"]}, {"tag": "th", "children": ["证件类型"]}, {"tag": "th", "children": ["证件号码"]}, {"tag": "th", "children": ["扫描件"]}, {"tag": "th", "children": ["操作"]}]}]},
+                          {"tag": "tbody", "children": [
+                            {"tag": "tr", "children": [{"tag": "td", "children": ["SALKABFU2TA376279"]}, {"tag": "td", "children": ["捷豹路虎"]}, {"tag": "td", "children": ["EUKOGBCN2094835X"]}, {"tag": "td", "children": ["货物进口证明书（关单）"]}, {"tag": "td", "children": ["关单号待回传"]}, {"tag": "td", "children": ["已上传"]}, {"tag": "td", "children": ["查看扫描件"]}]},
+                            {"tag": "tr", "children": [{"tag": "td", "children": ["SALKABFU2TA376279"]}, {"tag": "td", "children": ["捷豹路虎"]}, {"tag": "td", "children": ["EUKOGBCN2094835X"]}, {"tag": "td", "children": ["一致性证书"]}, {"tag": "td", "children": ["—"]}, {"tag": "td", "children": ["待上传"]}, {"tag": "td", "children": ["上传扫描件"]}]},
+                            {"tag": "tr", "children": [{"tag": "td", "children": ["SALKABFU2TA376279"]}, {"tag": "td", "children": ["捷豹路虎"]}, {"tag": "td", "children": ["EUKOGBCN2094835X"]}, {"tag": "td", "children": ["环保证书"]}, {"tag": "td", "children": ["—"]}, {"tag": "td", "children": ["已上传"]}, {"tag": "td", "children": ["查看扫描件"]}]}
+                          ]}
+                        ]}]}
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "props": {"className": "preview-card"},
+                      "children": [
+                        {"tag": "div", "props": {"className": "page-heading"}, "children": [{"tag": "div", "children": [{"tag": "h2", "children": ["生成关单签发信息表"]}, {"tag": "p", "children": ["按提单生成，自动抓取报关清单和提单字段，下载后补充签发日期、领取日期。"]}]}, {"tag": "div", "props": {"className": "page-actions"}, "children": [{"tag": "button", "props": {"className": "button primary"}, "children": ["按提单生成"]}]}]},
+                        {"tag": "div", "props": {"className": "notice"}, "children": [{"tag": "strong", "children": ["自动抓取字段："]}, {"tag": "span", "children": ["VIN、发动机号、HS编码、船舶名称、航次、提单号、数量；生产日期自动转为文本格式。"]}]},
+                        {"tag": "div", "props": {"className": "table-wrap"}, "children": [{"tag": "table", "props": {"className": "data-table"}, "children": [
+                          {"tag": "thead", "children": [{"tag": "tr", "children": [{"tag": "th", "children": ["提单号"]}, {"tag": "th", "children": ["品牌"]}, {"tag": "th", "children": ["船名/航次"]}, {"tag": "th", "children": ["车辆数"]}, {"tag": "th", "children": ["签发日期"]}, {"tag": "th", "children": ["领取日期"]}, {"tag": "th", "children": ["状态"]}, {"tag": "th", "children": ["操作"]}]}]},
+                          {"tag": "tbody", "children": [
+                            {"tag": "tr", "children": [{"tag": "td", "children": ["EUKOGBCN2094835X"]}, {"tag": "td", "children": ["捷豹路虎"]}, {"tag": "td", "children": ["MORNING CAROLINE / 2646"]}, {"tag": "td", "children": ["64"]}, {"tag": "td", "children": ["待填写"]}, {"tag": "td", "children": ["待填写"]}, {"tag": "td", "children": ["待补充"]}, {"tag": "td", "children": ["预览并下载"]}]},
+                            {"tag": "tr", "children": [{"tag": "td", "children": ["EUKOGBCN2094835X"]}, {"tag": "td", "children": ["捷豹路虎"]}, {"tag": "td", "children": ["MORNING CAROLINE / 2646"]}, {"tag": "td", "children": ["108"]}, {"tag": "td", "children": ["待填写"]}, {"tag": "td", "children": ["待填写"]}, {"tag": "td", "children": ["待补充"]}, {"tag": "td", "children": ["预览并下载"]}
+                            ]}
+                          ]}
+                        ]}]},
+                        {"tag": "div", "props": {"className": "preview-grid"}, "children": [
+                          {"tag": "div", "props": {"className": "notice notice-info"}, "children": [{"tag": "strong", "children": ["示例预览字段"]}, {"tag": "span", "children": ["船名/航次、提单号、数量、关单签发日期；车辆明细自动带出 VIN、发动机号、HS 编码和生产日期文本。"]}]},
+                          {"tag": "div", "props": {"className": "notice"}, "children": [{"tag": "strong", "children": ["品牌适配"]}, {"tag": "span", "children": ["捷豹路虎、沃尔沃、英力士共用生成逻辑，按品牌字段参数配置。"]}]}
+                        ]}
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "props": {"className": "preview-card"},
+                      "children": [
+                        {"tag": "div", "props": {"className": "page-heading"}, "children": [{"tag": "div", "children": [{"tag": "h2", "children": ["单证邮寄管理"]}, {"tag": "p", "children": ["导入存量结余表和厂家邮寄指令，系统自动匹配需邮寄车辆。"]}]}, {"tag": "div", "props": {"className": "page-actions"}, "children": [{"tag": "button", "props": {"className": "button secondary"}, "children": ["导入待邮寄"]}, {"tag": "button", "props": {"className": "button secondary"}, "children": ["导入厂家邮寄指令列表"]}, {"tag": "button", "props": {"className": "button primary"}, "children": ["确认并生成寄件资料"]}]}]},
+                        {"tag": "div", "props": {"className": "preview-grid"}, "children": [
+                          {"tag": "div", "props": {"className": "notice"}, "children": [
+                            {"tag": "strong", "children": ["匹配规则"]},
+                            {"tag": "span", "children": ["VIN + 批次号关联表先维护批次；结余表作为存量基础；厂家指令命中结余表后才进入需邮寄范围。导入批次号不等同于可邮寄。"]}
+                          ]},
+                          {"tag": "div", "props": {"className": "notice"}, "children": [
+                            {"tag": "strong", "children": ["生成顺序"]},
+                            {"tag": "span", "children": ["按批次号升序生成签收证明，并按 Dealer + Bank 分组；顺丰快递签模板与签收证明保持同样排序。"]}
+                          ]}
+                        ]},
+                        {"tag": "div", "props": {"className": "table-wrap"}, "children": [{"tag": "table", "props": {"className": "data-table"}, "children": [
+                          {"tag": "thead", "children": [{"tag": "tr", "children": [{"tag": "th", "children": ["VIN"]}, {"tag": "th", "children": ["批次"]}, {"tag": "th", "children": ["支付类型"]}, {"tag": "th", "children": ["Dealer"]}, {"tag": "th", "children": ["经销商"]}, {"tag": "th", "children": ["Bank"]}, {"tag": "th", "children": ["匹配结果"]}, {"tag": "th", "children": ["邮寄状态"]}, {"tag": "th", "children": ["顺丰单号"]}]}]},
+                          {"tag": "tbody", "children": [
+                            {"tag": "tr", "children": [{"tag": "td", "children": ["SALEA7EU5S2384932"]}, {"tag": "td", "children": ["2468-114"]}, {"tag": "td", "children": ["中国工行"]}, {"tag": "td", "children": ["北京德万隆经贸有限公司ICBC"]}, {"tag": "td", "children": ["北京德万隆经贸有限公司（工行监管）"]}, {"tag": "td", "children": ["中国工行"]}, {"tag": "td", "children": ["已命中厂家指令"]}, {"tag": "td", "children": ["待邮寄"]}, {"tag": "td", "children": ["待导入"]}]},
+                            {"tag": "tr", "children": [{"tag": "td", "children": ["SALKABFU2TA376279"]}, {"tag": "td", "children": ["2646-217"]}, {"tag": "td", "children": ["第三方付"]}, {"tag": "td", "children": ["天津中进示例经销商"]}, {"tag": "td", "children": ["天津中进示例经销商"]}, {"tag": "td", "children": ["招商银行"]}, {"tag": "td", "children": ["未命中厂家指令"]}, {"tag": "td", "children": ["待邮寄"]}, {"tag": "td", "children": ["—"]}]}
+                            ]}
+                          ]}
+                        ]},
+                        {"tag": "div", "props": {"className": "preview-grid"}, "children": [
+                          {"tag": "div", "props": {"className": "preview-card"}, "children": [{"tag": "h3", "children": ["生成文件"]}, {"tag": "p", "children": ["签收证明：按 Dealer + Bank 生成 2 张，批次号升序。"]}, {"tag": "p", "children": ["顺丰快递签导入模板：2 组，排序与签收证明一致。"]}, {"tag": "button", "props": {"className": "button secondary"}, "children": ["下载签收证明"]}, {"tag": "button", "props": {"className": "button secondary"}, "children": ["下载顺丰快递签模板"]}]},
+                          {"tag": "div", "props": {"className": "preview-card"}, "children": [{"tag": "h3", "children": ["收件地址主数据"]}, {"tag": "p", "children": ["收件公司、收件人、收件电话、收件手机、详细地址支持提前维护或批量导入。"]}, {"tag": "p", "children": ["示例：北京德万隆经贸有限公司（工行监管） / 李淑春 / 18910496485"]}, {"tag": "button", "props": {"className": "button secondary"}, "children": ["维护收件地址"]}]}
+                        ]},
+                        {"tag": "div", "props": {"className": "notice notice-info"}, "children": [{"tag": "strong", "children": ["物流状态跟踪"]}, {"tag": "span", "children": ["导入顺丰单号后状态为已邮寄；系统自动抓取物流状态，签收后更新为已签收。当前状态：待邮寄 / 已邮寄 / 已签收。"]}]}
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "props": {"className": "preview-card"},
+                      "children": [
+                        {"tag": "div", "props": {"className": "page-heading"}, "children": [{"tag": "div", "children": [{"tag": "h2", "children": ["沃尔沃合格证"]}, {"tag": "p", "children": ["业务人员导入关单号码表，机器人访问公开网站查询并自动打包保存电子合格证。"]}]}, {"tag": "div", "props": {"className": "page-actions"}, "children": [{"tag": "button", "props": {"className": "button secondary"}, "children": ["导入关单号码表"]}, {"tag": "button", "props": {"className": "button primary"}, "children": ["启动机器人查询"]}]}]},
+                        {"tag": "div", "props": {"className": "notice"}, "children": [{"tag": "strong", "children": ["执行边界"]}, {"tag": "span", "children": ["公开网站免登录；按业务提供的表格参数查询；查询完成后自动保存电子文件并打包，业务人员下载后打印。"]}]},
+                        {"tag": "div", "props": {"className": "table-wrap"}, "children": [{"tag": "table", "props": {"className": "data-table"}, "children": [
+                          {"tag": "thead", "children": [{"tag": "tr", "children": [{"tag": "th", "children": ["VIN"]}, {"tag": "th", "children": ["报关单号"]}, {"tag": "th", "children": ["品牌"]}, {"tag": "th", "children": ["机器人状态"]}, {"tag": "th", "children": ["电子合格证"]}, {"tag": "th", "children": ["操作"]}]}]},
+                          {"tag": "tbody", "children": [{"tag": "tr", "children": [{"tag": "td", "children": ["YV1A22AB0M100001"]}, {"tag": "td", "children": ["020120260001234567"]}, {"tag": "td", "children": ["沃尔沃"]}, {"tag": "td", "children": ["已完成"]}, {"tag": "td", "children": ["已打包 / Volvo-Cert-20261023.zip"]}, {"tag": "td", "children": ["下载并打印"]}]}]}
+                        ]}]}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"tag": "footer", "props": {"className": "app-footer"}, "children": ["系统演示数据（合成）· 非真实业务资料"]}
+          ]
+        }
+      ],
+      "events": {}
+    }
+  }
+}

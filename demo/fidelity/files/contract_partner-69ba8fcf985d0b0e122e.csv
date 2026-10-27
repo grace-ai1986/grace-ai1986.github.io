@@ -1,0 +1,3 @@
+﻿sys_code,pk,create_time,update_time,if_del,biz_unit,order_pk,order_no,logi_org_sort,logi_org_name,logi_org_code,logi_org_crm_no,logi_org_nation,logi_org_nation_code,logi_org_eng_name,logi_org_type
+DEMO_ZJYB,DEMO:contract_partner:demoHomepageOpsOrder,2026-10-20T09:00:00,2026-10-20T09:00:00,0,中进贸易（一部）,demoHomepageOpsOrder,DEMO-OPS-ORDER,TR,新韵博超承运商（演示）,DEMO-OPS-CARRIER-ORG,DEMO-OPS-CARRIER,中国,156,,0
+DEMO_ZJYB,DEMO:contract_partner:demoMonthlytransport,2026-10-20T09:00:00,2026-10-20T09:00:00,0,中进贸易（一部）,demoMonthlytransport,DEMO-MONTHLY-TRANSPORT,TR,板车承运商（合成演示）,DEMO-TRANSPORT-ORG,DEMO-TRANSPORT-CARRIER,中国,156,,0

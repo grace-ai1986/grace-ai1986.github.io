@@ -1,0 +1,3 @@
+﻿原港口作业编号,所属提单,车辆VIN范围,港口作业,实际作业时间,港口作业合作方,内部经办人,本次结果,实际作业来源依据,问题简述／办理说明,备注
+demoHomepageOpsPortUNLOAD,demoHomepageOpsBill,"[""demoHomepageOpsVehicle1"",""demoHomepageOpsVehicle2"",""demoHomepageOpsVehicle3"",""demoHomepageOpsVehicle4""]",UNLOAD,2026-09-08T10:00,demoHomepageOpsCarrier,演示现场员,NORMAL,本地合成码头UNLOAD交接单,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。
+demoHomepageOpsPortHANDOVER,demoHomepageOpsBill,"[""demoHomepageOpsVehicle1"",""demoHomepageOpsVehicle2"",""demoHomepageOpsVehicle3"",""demoHomepageOpsVehicle4""]",HANDOVER,2026-09-08T11:00,demoHomepageOpsCarrier,演示现场员,NORMAL,本地合成码头HANDOVER交接单,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。

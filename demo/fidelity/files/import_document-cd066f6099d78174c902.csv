@@ -1,0 +1,5 @@
+﻿VIN,本次车辆VIN,所属提单,业务订单,真实证件类型,真实证件号码,签发机构,实际签发日,原证来源说明,报关证明原记录,实际依据,备注
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,其他随车资料,DEMO-NEXT-DOCUMENT-PENDING,,,合成手续资料（样例）,,,待登记收存、邮寄、交接
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,其他随车资料,DEMO-NEXT-DOCUMENT-COMPLETE,,,合成手续资料（样例）,,,收存邮寄交接完成
+,"[""demoNextDocumentCompleteVehicle1"",""demoNextDocumentCompleteVehicle2""]",demoNextDocumentComplete,,其他随车资料,DEMO-NEXT-DOCUMENT-DRAFT,,,合成手续资料（样例）,,,手续草稿，待确认
+SALDMP000A0000002,"[""demoHomepageOpsVehicle2""]",demoHomepageOpsBill,demoHomepageOpsOrder,其他随车资料（合成）,DEMO-OPS-DOCUMENT,合成资料签发方,2026-09-09,合成随车资料清单，非COC或法律证明,,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。,合成样例；所有作业、单据号码及结果均为本地演示，不代表真实外部办理结果。
