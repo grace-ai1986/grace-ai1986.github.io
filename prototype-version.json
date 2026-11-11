@@ -1,0 +1,16 @@
+{
+  "version": "internal-v2.75",
+  "archiveDate": "2026-11-10",
+  "publishDate": "2026-11-11",
+  "channels": [
+    "internal-v2.75",
+    "mobile",
+    "carrier"
+  ],
+  "archiveResources": {
+    "fileCount": 305,
+    "totalBytes": 61240532,
+    "sha256": "966aef07f4fcca18fdac9519ed476ef94a5d00f5f1c20a6717aa3eb24276e6ca"
+  },
+  "defaultChannel": "internal-v2.75"
+}
