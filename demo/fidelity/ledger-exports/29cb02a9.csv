@@ -1,0 +1,3 @@
+﻿,业务记录,类型,提单／订单,VIN／本次范围,业务日期,单据状态,备注,办理与明细
+,demoHomepageOpsMoveIn-stock-demoHomepageOpsVehicle1,库存事件,DEMO-OPS-BILL DEMO-OPS-ORDER,SALDMP000A0000001,2026-09-11T10:00,已确认,,查看原记录
+,demoHomepageFinancePhysicalIn,库存事件,DEMO-HOMEPAGE-FINANCE-BILL,SALHFN000A0000001,2026-09-01,已确认,,查看原记录

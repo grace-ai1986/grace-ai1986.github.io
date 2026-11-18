@@ -250,7 +250,7 @@
     },
     {
       "id": "bill-payment-registration",
-      "title": "登记收付",
+      "title": "付款登记",
       "route": {
         "page": "receipt-payments",
         "tab": "bill-execution"
@@ -267,8 +267,26 @@
       "url": "/demo/fidelity/pages/bill-payment-registration.json.gz"
     },
     {
+      "id": "receipt-registration",
+      "title": "收款登记",
+      "route": {
+        "page": "receipt-payments",
+        "tab": "bill-execution"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/receipt-registration.json.gz"
+    },
+    {
       "id": "monthly-logistics-plans",
-      "title": "月度收款计划",
+      "title": "月度收付计划",
       "route": {
         "page": "receipt-payments",
         "tab": "monthly-logistics"
@@ -286,7 +304,7 @@
     },
     {
       "id": "tax-payment-confirmation",
-      "title": "实缴登记",
+      "title": "完税登记",
       "route": {
         "page": "tax-payments"
       },
@@ -464,64 +482,163 @@
     {
       "id": "shipping-instruction-management",
       "title": "发运指令管理",
-      "route": {"page": "warehouse-shipping", "section": "instructions"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-shipping",
+        "section": "instructions"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/shipping-instruction-management.json"
     },
     {
       "id": "inbound-vehicle-list",
       "title": "已入库列表",
-      "route": {"page": "warehouse-shipping", "section": "inbound"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-shipping",
+        "section": "inbound"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/inbound-vehicle-list.json"
     },
     {
       "id": "warehouse-documents",
       "title": "入库出库台账",
-      "route": {"page": "warehouse-shipping", "section": "documents"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"read","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-shipping",
+        "section": "documents"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/warehouse-documents.json"
     },
     {
       "id": "pending-shipment-vehicles",
       "title": "待发运车辆管理",
-      "route": {"page": "warehouse-shipping", "section": "pending"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-shipping",
+        "section": "pending"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/pending-shipment-vehicles.json"
     },
     {
       "id": "vehicle-inventory",
       "title": "车辆盘点",
-      "route": {"page": "warehouse-control", "section": "vehicle-inventory"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-control",
+        "section": "vehicle-inventory"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/vehicle-inventory.json"
     },
     {
       "id": "key-inventory",
       "title": "钥匙盘点",
-      "route": {"page": "warehouse-control", "section": "key-inventory"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-control",
+        "section": "key-inventory"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/key-inventory.json"
     },
     {
       "id": "key-usage-ledger",
       "title": "钥匙领用台账",
-      "route": {"page": "warehouse-control", "section": "key-usage-ledger"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-control",
+        "section": "key-usage-ledger"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/key-usage-ledger.json"
     },
     {
       "id": "shipping-report",
       "title": "发运报表",
-      "route": {"page": "warehouse-control", "section": "shipping-report"},
-      "roleAccess": {"admin":"write","finance":"none","inventory":"write","customs":"read","documents":"none","data-admin":"read","carrier":"none"},
+      "route": {
+        "page": "warehouse-control",
+        "section": "shipping-report"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/shipping-report.json"
     },
     {
       "id": "warehouse-settlements",
       "title": "仓储账单与特殊业务",
-      "route": {"page": "warehouse-control", "section": "settlements"},
-      "roleAccess": {"admin":"write","finance":"write","inventory":"write","customs":"none","documents":"none","data-admin":"none","carrier":"none"},
+      "route": {
+        "page": "warehouse-control",
+        "section": "settlements"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "write",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "none",
+        "carrier": "none"
+      },
       "url": "/demo/fidelity/pages/warehouse-settlements.json"
     },
     {
@@ -1668,11 +1785,11 @@
       "url": "/demo/fidelity/pages/report-dom_purchase.json.gz"
     },
     {
-      "id": "report-import_bl",
-      "title": "进口提单信息",
+      "id": "report-import_info",
+      "title": "进口信息台账",
       "route": {
         "page": "report",
-        "table": "import_bl"
+        "table": "import_info"
       },
       "roleAccess": {
         "admin": "write",
@@ -1683,7 +1800,7 @@
         "data-admin": "read",
         "carrier": "none"
       },
-      "url": "/demo/fidelity/pages/report-import_bl.json.gz"
+      "url": "/demo/fidelity/pages/report-import_info.json.gz"
     },
     {
       "id": "report-dom_sale",
@@ -1705,7 +1822,7 @@
     },
     {
       "id": "report-export_sale",
-      "title": "出口销售台账",
+      "title": "出口发货单信息",
       "route": {
         "page": "report",
         "table": "export_sale"
@@ -1720,6 +1837,96 @@
         "carrier": "none"
       },
       "url": "/demo/fidelity/pages/report-export_sale.json.gz"
+    },
+    {
+      "id": "report-export_sale_subject",
+      "title": "出口发货商品明细",
+      "route": {
+        "page": "report",
+        "table": "export_sale_subject"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-export_sale_subject.json.gz"
+    },
+    {
+      "id": "report-export_sale_contract",
+      "title": "出口发货关联合同明细",
+      "route": {
+        "page": "report",
+        "table": "export_sale_contract"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-export_sale_contract.json.gz"
+    },
+    {
+      "id": "report-export_bl",
+      "title": "出口提单信息",
+      "route": {
+        "page": "report",
+        "table": "export_bl"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-export_bl.json.gz"
+    },
+    {
+      "id": "report-export_bl_sbject",
+      "title": "出口提单标的物明细",
+      "route": {
+        "page": "report",
+        "table": "export_bl_sbject"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-export_bl_sbject.json.gz"
+    },
+    {
+      "id": "report-export_bl_contract",
+      "title": "出口提单关联合同明细",
+      "route": {
+        "page": "report",
+        "table": "export_bl_contract"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "write",
+        "inventory": "none",
+        "customs": "none",
+        "documents": "none",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/report-export_bl_contract.json.gz"
     },
     {
       "id": "report-stock_detail",
@@ -2191,6 +2398,365 @@
         "carrier": "none"
       },
       "url": "/demo/fidelity/pages/bill-payment-registration-bill-3.json.gz"
+    },
+    {
+      "id": "customs-stages",
+      "title": "报关阶段",
+      "route": {
+        "page": "import-operations",
+        "section": "customs-stages",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/customs-stages.json.gz"
+    },
+    {
+      "id": "inspection-import",
+      "title": "备检挑车",
+      "route": {
+        "page": "import-operations",
+        "section": "inspection-import",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/inspection-import.json.gz"
+    },
+    {
+      "id": "pi-completion",
+      "title": "PI完成",
+      "route": {
+        "page": "import-operations",
+        "section": "pi-completion",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/pi-completion.json.gz"
+    },
+    {
+      "id": "customs-clearance",
+      "title": "报关清关",
+      "route": {
+        "page": "import-operations",
+        "section": "customs-clearance",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/customs-clearance.json.gz"
+    },
+    {
+      "id": "online-queue",
+      "title": "商检上线",
+      "route": {
+        "page": "import-operations",
+        "section": "online-queue",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/online-queue.json.gz"
+    },
+    {
+      "id": "customs-documents",
+      "title": "关务单证生成",
+      "route": {
+        "page": "import-operations",
+        "section": "customs-documents",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/customs-documents.json.gz"
+    },
+    {
+      "id": "daily-reports",
+      "title": "日报",
+      "route": {
+        "page": "import-operations",
+        "section": "daily-reports",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/daily-reports.json.gz"
+    },
+    {
+      "id": "port-fee-settlement",
+      "title": "港口费用结算",
+      "route": {
+        "page": "import-operations",
+        "section": "port-fee-settlement",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/port-fee-settlement.json.gz"
+    },
+    {
+      "id": "warehouse-maintenance",
+      "title": "维护周期管理",
+      "route": {
+        "page": "import-operations",
+        "section": "warehouse-maintenance",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/warehouse-maintenance.json.gz"
+    },
+    {
+      "id": "cal-management",
+      "title": "CAL检测",
+      "route": {
+        "page": "import-operations",
+        "section": "cal",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/cal-management.json.gz"
+    },
+    {
+      "id": "cal-pdi",
+      "title": "PDI释放",
+      "route": {
+        "page": "import-operations",
+        "section": "cal-pdi",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/cal-pdi.json.gz"
+    },
+    {
+      "id": "cal-base",
+      "title": "CAL基础数据",
+      "route": {
+        "page": "import-operations",
+        "section": "cal-base",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/cal-base.json.gz"
+    },
+    {
+      "id": "warehouse-location-config",
+      "title": "库区库位配置",
+      "route": {
+        "page": "import-operations",
+        "section": "warehouse-location-config",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/warehouse-location-config.json.gz"
+    },
+    {
+      "id": "carrier-assignment",
+      "title": "承运商分配规则",
+      "route": {
+        "page": "import-operations",
+        "section": "carrier-assignment",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/carrier-assignment.json.gz"
+    },
+    {
+      "id": "short-haul-route-config",
+      "title": "短驳路线配置",
+      "route": {
+        "page": "import-operations",
+        "section": "short-haul-route-config",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/short-haul-route-config.json.gz"
+    },
+    {
+      "id": "d42",
+      "title": "D42报表",
+      "route": {
+        "page": "import-operations",
+        "section": "d42",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/d42.json.gz"
+    },
+    {
+      "id": "license-management",
+      "title": "自动进口许可证管理",
+      "route": {
+        "page": "import-operations",
+        "section": "license-management",
+        "channel": "internal"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "write",
+        "customs": "read",
+        "documents": "read",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/license-management.json.gz"
+    },
+    {
+      "id": "ccc-certificate-management",
+      "title": "CCC证书管理",
+      "route": {
+        "page": "document-management",
+        "section": "ccc-certificate-management"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "read",
+        "documents": "write",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/ccc-certificate-management.json.gz"
+    },
+    {
+      "id": "vehicle-certificate-management",
+      "title": "合格证管理",
+      "route": {
+        "page": "document-management",
+        "section": "vehicle-certificate-management"
+      },
+      "roleAccess": {
+        "admin": "write",
+        "finance": "none",
+        "inventory": "none",
+        "customs": "read",
+        "documents": "write",
+        "data-admin": "read",
+        "carrier": "none"
+      },
+      "url": "/demo/fidelity/pages/vehicle-certificate-management.json.gz"
     }
   ],
   "editControls": {

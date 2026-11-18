@@ -1,0 +1,6 @@
+﻿,内部订单编号,关联合同／框架合同,关联提单,客商名称,订单分类,合同类型,贸易类别,状态,备注,操作
+,DEMO-PO-CUSTOMS-AUTO,进口车辆采购框架（样例）,DEMO-BL-CUSTOMS-AUTO,海外汽车销售公司（示例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,合成演示：自动占用及逐车归还,本次关联范围： 0 辆
+,DEMO-NEXT-PARTIALPURCHASE,车辆采购及销售框架（样例）,DEMO-NEXT-PARTIAL,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,采购订单后续办理,本次关联范围： 0 辆
+,DEMO-NEXT-PARTIALSALE,车辆采购及销售框架（样例）,DEMO-NEXT-PARTIAL,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,销售订单后续办理,本次关联范围： 0 辆
+,DEMO-NEXT-COMPLETEPURCHASE,车辆采购及销售框架（样例）,DEMO-NEXT-COMPLETE,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,草稿,—,本次关联范围： 0 辆
+,DEMO-NEXT-COMPLETESALE,车辆采购及销售框架（样例）,DEMO-NEXT-COMPLETE,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,草稿,—,本次关联范围： 0 辆 撤销销售草稿

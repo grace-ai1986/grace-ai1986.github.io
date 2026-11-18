@@ -1,0 +1,3 @@
+﻿,合同编号,是否框架合同,合同名称,贸易类别,客商名称,合同币种,境内/境外,业务系统合同主键,关联订单,状态,备注,操作
+,DEMO-HOME-PURCHASE-2026,普通合同,车辆采购普通合同（合成）,GOODS · 商品贸易,海外车辆供应方（合成）,USD · 美元,境外,demoHomepageCatalogPurchaseContract,1,已确认,,
+,DEMO-HOMEPAGE-FINANCE-CONTRACT,框架合同,财务样例车辆销售框架（合成）,GOODS · 商品贸易,财务样例销售客户（合成）,CNY · 人民币,境外,demoHomepageFinanceContract,1,已确认,,

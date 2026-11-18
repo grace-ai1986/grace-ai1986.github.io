@@ -1,16 +1,13 @@
 {
-  "version": "internal-v2.75",
-  "archiveDate": "2026-11-10",
-  "publishDate": "2026-11-11",
-  "channels": [
-    "internal-v2.75",
-    "mobile",
-    "carrier"
-  ],
-  "archiveResources": {
-    "fileCount": 305,
-    "totalBytes": 61240532,
-    "sha256": "966aef07f4fcca18fdac9519ed476ef94a5d00f5f1c20a6717aa3eb24276e6ca"
-  },
-  "defaultChannel": "internal-v2.75"
+  "prototype": "current-working-prototype",
+  "phase1Version": "phase1-v1.8",
+  "sourceCommit": "4c616b2",
+  "publishedAt": "2026-11-18T02:36:40.132928+00:00",
+  "capturedPages": 147,
+  "links": {
+    "full": "https://grace-ai1986.github.io/",
+    "phase1": "https://grace-ai1986.github.io/?phase=1",
+    "mobile": "https://grace-ai1986.github.io/?prototype=mobile",
+    "carrier": "https://grace-ai1986.github.io/?prototype=carrier"
+  }
 }

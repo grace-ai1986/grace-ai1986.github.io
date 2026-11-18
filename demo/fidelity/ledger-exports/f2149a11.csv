@@ -1,0 +1,2 @@
+﻿,业务记录,类型,提单／订单,VIN／本次范围,车型／品牌,客户／货权方,仓库／库位,监管属性,本次入库日期,单据状态,备注,办理与明细
+,SALDMP000A0000001 现场样例存放仓（合成）,车辆位置,DEMO-OPS-BILL,SALDMP000A0000001,现场样例车辆（合成） 捷豹路虎,现场样例收车客户（合成） 货权： 现场样例收车客户（合成）,现场样例存放仓（合成） B-01（合成）,OTHER,2026-09-11T10:00,在库,—,查看原记录 办理记录与来源 demoHomepageOpsEntry-stock-demoHomepageOpsVehicle1 · 2026-09-10T09:00 demoHomepageOpsMoveOut-stock-demoHomepageOpsVehicle1 · 2026-09-11T09:00 demoHomepageOpsMoveIn-stock-demoHomepageOpsVehicle1 · 2026-09-11T10:00

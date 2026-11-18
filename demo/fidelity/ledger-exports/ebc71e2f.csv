@@ -1,0 +1,2 @@
+﻿,来源业务系统代码 * sys_code,中间表数据唯一主键 * pk,中间表数据创建时间 * create_time,中间表数据修改时间 * update_time,中间表数据是否删除 * if_del,业务单元 * biz_unit,业务系统订单主键 * order_pk,订单编号 * order_no,收付计划ID * plan_id,合同类型 * contract_type,付款节点 * mile_post,收付方向 * rec_or_pay,客商名称 * partner_name,客商机构代码 * partner_org_code,客商CRM编号 * partner_crm_no,款项性质 可选 category,结算方式 可选 settlement,款项比例 可选 plan_proportion,款项金额 * plan_amount,预计付款时间 可选 plan_date,备注 可选 remark,备注
+没有匹配的上报记录 当前无固定上报样例；可查看完整字段定义。,,,,,,,,,,,,,,,,,,,,,,

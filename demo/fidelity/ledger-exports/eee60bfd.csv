@@ -1,0 +1,2 @@
+﻿,来源业务系统代码 * sys_code,中间表数据唯一主键 * pk,中间表数据创建时间 * create_time,中间表数据修改时间 * update_time,中间表数据是否删除 * if_del,业务单元 * biz_unit,提单号 * TDH,货权单位 * HQDW,发运人 可选 FYR,启运国 可选 QYGUO,启运港 可选 QYG,启运地 可选 QYD,收货人 可选 SHR,运抵国 可选 DYG,运抵港 可选 YDG,运抵地 可选 YDD,船名航次 可选 CMHC,承运人 * CYR,运输方式 可选 YSFS,装运方式 可选 YZFS,计划发运日 * JHFYR,实际发运日 * SJFYR,计划运抵日 * JHYDR,实际运抵日 * SJYDR,运抵状态 * YDZT,提单数量 * TDSL,单位 * DW,包装数量 可选 BZSL,包装单位 可选 BZDW,提单币种 * TDBZ,提单金额 * TDJE,提单金额折算USD 可选 TDJEZSUSD,保税/完税 可选 BSWS,计量单位名称 可选 DWMC,包装单位名称 可选 BZDWMC,人民币金额 * RMBJE,备注
+没有匹配的上报记录 当前无固定上报样例；可查看完整字段定义。,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

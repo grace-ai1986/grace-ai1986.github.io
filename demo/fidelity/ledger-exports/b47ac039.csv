@@ -1,0 +1,2 @@
+﻿,来源业务系统代码 * sys_code,中间表数据唯一主键 * pk,中间表数据创建时间 * create_time,中间表数据修改时间 * update_time,中间表数据是否删除 * if_del,业务单元 * biz_unit,合同类型 * HTLX,业务系统订单主键 * SOURCE_PK,合同号 * HTH,原币金额 * YBJE,本币金额 可选 BBJE,美元金额 可选 MYJE,折本币汇率 可选 ZBBHL,折USD汇率 可选 ZUSDHL,出运数量 * CYSL,包装数量 可选 BZSL,已出数量 * YCSL,已出包装数量 可选 YCBZSL,人民币金额 * RMBJE,发货类型/发货方式 * FHLX,备注
+没有匹配的上报记录 当前无固定上报样例；可查看完整字段定义。,,,,,,,,,,,,,,,,,,,,,

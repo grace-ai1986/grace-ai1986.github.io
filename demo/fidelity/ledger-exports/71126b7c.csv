@@ -1,0 +1,2 @@
+﻿,来源业务系统代码 * sys_code,中间表数据唯一主键 * pk,中间表数据创建时间 * create_time,中间表数据修改时间 * update_time,中间表数据是否删除 * if_del,业务单元 * biz_unit,提单号 * TDH,订单系统主键 * order_pk,采购订单号 * order_no,发运人 * FYR,启运国 * QYGUO,启运港 * QYG,运抵港 * YDG,船名航次 * CMHC,承运人 * CYR,运输方式 * YSFS,计划运抵日 * JHYDR,规格型号 * BSWS,备注
+没有匹配的上报记录 当前无固定上报样例；可查看完整字段定义。,,,,,,,,,,,,,,,,,,,

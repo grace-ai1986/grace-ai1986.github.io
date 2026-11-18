@@ -1,0 +1,6 @@
+﻿,订单编号和计划编号,收付款单位,方向,费用名目,实际费用项目,计划现金金额,计划预付抵扣金额,币种,预计付款时间,海关保函类别,计划状态,备注,实际已收／已付,实际抵扣,剩余未收／未付,办理状态,操作
+,DEMO-NEXT-PLANPARTIALSERVICE DEMO-NEXT-PLANPARTIAL-PLAN,华远汽车贸易（样例）,收,仓储费用,仓储服务费,40,—,CNY,2026-10-02,—,已确认,收款计划部分覆盖,0,0,40,待办理,办理收款
+,DEMO-PLAN-COMPLETE-PURCHASE DEMO-PLAN-COMPLETE-PURCHASE-01,海外汽车供应商（样例）,付,整车服务,采购CIF车款,100.00,—,USD,2026-10-20,—,已确认,计划已齐，尚未执行,0,0,100,待办理,办理付款
+,DEMO-HOMEPAGE-FINANCE-SALE DEMO-HOMEPAGE-FINANCE-RECEIPT,财务样例销售客户（合成）,收,合成销售费用,合成车辆销售费用,1000.00,—,CNY,2026-10-21,—,已确认,,1000,0,0,收付已完成,办理收款
+,DEMO-HOMEPAGE-PURCHASE DEMO-HOMEPAGE-PURCHASE-PLAN,财务样例海外卖方（合成）,付,合成采购车款,合成采购车款,100,—,USD,2025-10-05,—,已确认,—,100,0,0,收付已完成,办理付款
+,DEMO-HOMEPAGE-PURCHASE DEMO-HOMEPAGE-TAX-PLAN,财务完整样例海关收款方（合成）,付,海关税款,海关税费（关税、消费税、进口增值税）,30,—,CNY,2025-10-20,汇总保函,已确认,—,30,0,0,收付已完成,计划 30 CNY · 已覆盖 30 · 未覆盖 0 缴税记录与凭证 节点已满足

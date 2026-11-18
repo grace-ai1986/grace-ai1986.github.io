@@ -1,0 +1,4 @@
+﻿,业务记录,类型,提单／订单,VIN／本次范围,业务日期,单据状态,备注,办理与明细
+,到库／出库计划,入出库计划,DEMO-OPS-BILL DEMO-OPS-ORDER,SALDMP000A0000001、SALDMP000A0000002,2026-09-10,已执行,,归档 查看原记录
+,demoHomepageOpsMoveIn-stock-demoHomepageOpsVehicle1,库存事件,DEMO-OPS-BILL DEMO-OPS-ORDER,SALDMP000A0000001,2026-09-11T10:00,已确认,,继续办理 查看原记录 登记质损
+,demoHomepageFinancePhysicalIn,库存事件,DEMO-HOMEPAGE-FINANCE-BILL,SALHFN000A0000001,2026-09-01,已确认,,继续办理 查看原记录 登记质损

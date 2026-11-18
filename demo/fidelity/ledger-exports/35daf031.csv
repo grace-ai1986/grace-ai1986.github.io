@@ -1,0 +1,15 @@
+﻿,内部订单编号,关联合同／框架合同,关联提单,客商名称,订单分类,合同类型,贸易类别,状态,备注,操作
+,DEMO-HOME-PURCHASE-ORDER,车辆采购普通合同（合成）,DEMO-HOME-BL-2026,海外车辆供应方（合成）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,,
+,DEMO-HOME-SALE-ORDER,车辆销售普通合同（合成）,DEMO-HOME-BL-2026,车辆与仓储客户（合成）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,,
+,DEMO-PLAN-DETAIL-1-PURCHASE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-1,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成付款计划
+,DEMO-PLAN-DETAIL-2-PURCHASE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-2,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成付款计划
+,DEMO-PLAN-DETAIL-3-PURCHASE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-3,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成付款计划
+,DEMO-PLAN-DETAIL-4-PURCHASE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-4,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成付款计划
+,DEMO-PLAN-DETAIL-1-SALE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-1,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成收款计划
+,DEMO-PLAN-DETAIL-2-SALE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-2,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成收款计划
+,DEMO-PLAN-DETAIL-3-SALE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-3,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成收款计划
+,DEMO-PLAN-DETAIL-4-SALE,车辆采购及销售框架（样例）,DEMO-PLAN-DETAIL-4,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,车款税款分项计划,归档 删除 生成收款计划
+,DEMO-DOC-PURCHASE-ORDER,单证样例采购合同（合成）,DEMO-DOCUMENT-BILL,单证样例海外卖方（合成）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,合成演示资料，仅供核对下载；不代表外部开票、签发、收付款或业务完成,归档 删除 生成付款计划
+,DEMO-DOC-CHINA-SALE-ORDER,单证样例销售合同（合成）,DEMO-DOCUMENT-BILL,单证样例中国客户（合成）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,合成演示资料，仅供核对下载；不代表外部开票、签发、收付款或业务完成,归档 删除 生成收款计划
+,DEMO-PO-CUSTOMS-AUTO,进口车辆采购框架（样例）,DEMO-BL-CUSTOMS-AUTO,海外汽车销售公司（示例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,合成演示：自动占用及逐车归还,归档 删除 生成付款计划
+,DEMO-DOC-NINGBO-SALE-ORDER,单证样例销售合同（合成）,DEMO-DOCUMENT-BILL,单证样例宁波客户（合成）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,合成演示资料，仅供核对下载；不代表外部开票、签发、收付款或业务完成,归档 删除 生成收款计划

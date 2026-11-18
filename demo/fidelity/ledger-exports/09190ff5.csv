@@ -1,0 +1,2 @@
+﻿,来源业务系统代码 * sys_code,中间表数据唯一主键 * pk,中间表数据创建时间 * create_time,中间表数据修改时间 * update_time,中间表数据是否删除 * if_del,业务单元 * biz_unit,业务系统订单主键 * SOURCE_PK,销售合同号 * CGHTH,提单品名 * TDPM,规格型号 * GGXH,提单金额（原币） * TDJEYB,提单金额（本币） 可选 TDJEBB,提单金额（USD） 可选 TDJEUSD,折本币汇率 可选 ZBBHL,折USD汇率 可选 ZUSDHL,提单数量 * TDSL,提单包装数量 可选 TDBZSL,人民币金额 * RMBJE,备注
+没有匹配的上报记录 当前无固定上报样例；可查看完整字段定义。,,,,,,,,,,,,,,,,,,,

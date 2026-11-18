@@ -1,0 +1,2 @@
+﻿,实际流水编号,提单号,方向,订单,收付对象,实际日期,实际费用项目（来源）,实际金额,币种,计划应用,凭证文件,状态,备注
+,DEMO-HOMEPAGE-RECEIPT,DEMO-HOMEPAGE-FINANCE-BILL,收款,DEMO-HOMEPAGE-FINANCE-SALE,财务样例销售客户（合成）,2026-10-23,合成车辆销售费用,1000,CNY,DEMO-HOMEPAGE-FINANCE-RECEIPT · 1000,1,已确认·待核销,合成收款1000元，不是真实银行到账

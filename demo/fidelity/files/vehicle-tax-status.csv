@@ -1,0 +1,18 @@
+﻿VIN,车型名称,品牌,所属提单,关联采购订单,关联销售订单,国内厂家,单价（CIF）,币种,状态,备注,是否完税
+SALHMP000A0000001,完整建档车型（合成）,英力士,DEMO-HOME-BL-2026,DEMO-HOME-PURCHASE-ORDER,DEMO-HOME-SALE-ORDER,车辆与仓储客户（合成）,"$100,000.00",USD · 美元,已确认,COC编号、商业发票及原厂配置待补充。,待补
+SALHMP000A0000001,完整建档车型（合成）,英力士,DEMO-HOME-BL-2026,DEMO-HOME-PURCHASE-ORDER,DEMO-HOME-SALE-ORDER,车辆与仓储客户（合成）,"$100,000.00",USD · 美元,草稿,COC编号、商业发票及原厂配置待补充。,待补
+SALHMP000A0000001,完整建档车型（合成）,英力士,DEMO-HOME-BL-2026,DEMO-HOME-PURCHASE-ORDER,DEMO-HOME-SALE-ORDER,车辆与仓储客户（合成）,"$100,000.00",USD · 美元,待重新确认,COC编号、商业发票及原厂配置待补充。,待补
+SALDDM000A0000001,捷豹路虎单证样例车型（合成）,捷豹路虎,DEMO-DOCUMENT-BILL,DEMO-DOC-PURCHASE-ORDER,DEMO-DOC-CHINA-SALE-ORDER,单证样例中国客户（合成）,"$10,000.00",USD · 美元,已确认,合成演示资料，仅供核对下载；不代表外部开票、签发、收付款或业务完成,待补
+SALHFN000A0000001,财务样例车辆（合成）,捷豹路虎,DEMO-HOMEPAGE-FINANCE-BILL,—,DEMO-HOMEPAGE-FINANCE-SALE,财务样例销售客户（合成）,$100.00,USD · 美元,已确认,合成演示资料，不代表真实业务或正式收费标准,待补
+SALEA6EX2T2631281,Defender / AU663 / 2026 Model Year,捷豹路虎,未选择,—,—,未选择,—,—,已确认,待确认COC编号,待补
+SALEA6EX4T2630360,Defender / AU663 / 2026 Model Year,捷豹路虎,未选择,—,—,未选择,—,—,已确认,待确认COC编号,待补
+SALEA6EX4T2633159,Defender / AU663 / 2026 Model Year,捷豹路虎,未选择,—,—,未选择,—,—,已确认,待确认COC编号,待补
+SALEA6EX4T2634084,Defender / AU663 / 2026 Model Year,捷豹路虎,未选择,—,—,未选择,—,—,已确认,待确认COC编号,待补
+SALDPM000A0000001,揽胜 3.0L（样例）,捷豹路虎,DEMO-PLAN-DETAIL-1,DEMO-PLAN-DETAIL-1-PURCHASE,DEMO-PLAN-DETAIL-1-SALE,华远汽车贸易（样例）,$100.00,USD · 美元,已确认,车款税款从提单安排,待补
+SALDPM000A0000002,揽胜 3.0L（样例）,捷豹路虎,DEMO-PLAN-DETAIL-2,DEMO-PLAN-DETAIL-2-PURCHASE,DEMO-PLAN-DETAIL-2-SALE,华远汽车贸易（样例）,$100.00,USD · 美元,已确认,厂家预付，待生成车款税款收款,待补
+SALDPM000A0000003,揽胜 3.0L（样例）,捷豹路虎,DEMO-PLAN-DETAIL-3,DEMO-PLAN-DETAIL-3-PURCHASE,DEMO-PLAN-DETAIL-3-SALE,华远汽车贸易（样例）,$100.00,USD · 美元,已确认,先付后收，待生成车款税款收款,待补
+SALDPM000A0000004,揽胜 3.0L（样例）,捷豹路虎,DEMO-PLAN-DETAIL-4,DEMO-PLAN-DETAIL-4-PURCHASE,DEMO-PLAN-DETAIL-4-SALE,华远汽车贸易（样例）,$100.00,USD · 美元,已确认,中进预付，待生成车款税款收款,待补
+SALDDM000A0000002,捷豹路虎单证样例车型（合成）,捷豹路虎,DEMO-DOCUMENT-BILL,DEMO-DOC-PURCHASE-ORDER,DEMO-DOC-NINGBO-SALE-ORDER,单证样例宁波客户（合成）,"$10,000.00",USD · 美元,已确认,合成演示资料，仅供核对下载；不代表外部开票、签发、收付款或业务完成,待补
+SALKABFU2TA376279,待补,待补,EUKOGBCN2085358X,PO-2026-001,—,—,—,—,—,—,是
+SALEA7EU1T2645619,待补,待补,EUKOGBCN2085358X,PO-2026-002,—,—,—,—,—,—,否
+SALHFN000A0000002,财务样例车辆（合成）,捷豹路虎,DEMO-HOMEPAGE-TAX-BILL,DEMO-HOMEPAGE-PURCHASE,—,—,—,—,—,—,是

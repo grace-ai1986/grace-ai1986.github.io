@@ -1,0 +1,3 @@
+﻿,业务记录,类型,提单／订单,VIN／本次范围,业务日期,单据状态,备注,办理与明细
+,单证交接记录,交接记录,DEMO-OPS-BILL DEMO-OPS-ORDER,SALDMP000A0000002,2026-09-17T11:00,已确认,,归档 继续办理 查看原记录
+,DEMO-OPS-DOCUMENT,随车单证,DEMO-OPS-BILL DEMO-OPS-ORDER,SALDMP000A0000002,2026-09-09,已确认,,归档 查看原记录

@@ -1,0 +1,2 @@
+﻿,来源业务系统代码 * sys_code,中间表数据唯一主键 * pk,中间表数据创建时间 * create_time,中间表数据修改时间 * update_time,中间表数据是否删除 * if_del,业务单元 * biz_unit,出运编号 * CYBH,出运单位 * CYDW,出运日期 * CYRQ,出运数量 * CYSL,单位 * DW,出运币种 * CYBZ,出运金额（原币） * CYJEYB,出运金额（本币） 可选 CYJEBB,出运金额（美元） 可选 CYJEMY,客户 可选 KH,出口国 可选 CKG,起运港 * QYG,进口国 可选 JKG,目的港 可选 MDG,贸易国 * MYG,交单日期 * JDRQ,通关日期 * TGRQ,计量单位名称 可选 DWMC,人民币金额 * RMBJE,备注
+没有匹配的上报记录 当前无固定上报样例；可查看完整字段定义。,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,9 @@
+﻿,#,关联合同／框架合同,关联提单,内部订单编号,客商名称,订单分类,合同类型,贸易类别,状态,备注,操作
+,1,进口车辆采购框架（样例）,DEMO-BL-CUSTOMS-AUTO,DEMO-PO-CUSTOMS-AUTO,海外汽车销售公司（示例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,合成演示：自动占用及逐车归还,本次关联范围： 0 辆
+,2,天津港仓库2027年度租赁合同,未选择,WH-ORDER-2027-001,天津港安达仓储有限公司,物流服务,POCT · 采购,SRV · 服务贸易,已确认,合成样例：普通合同下推的一次性订单，四期租金均待付款,本次关联范围： 0 辆
+,3,车辆采购及销售框架（样例）,DEMO-NEXT-PARTIAL,DEMO-NEXT-PARTIALPURCHASE,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,已确认,采购订单后续办理,本次关联范围： 0 辆
+,4,车辆采购及销售框架（样例）,DEMO-NEXT-PARTIAL,DEMO-NEXT-PARTIALSALE,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,已确认,销售订单后续办理,本次关联范围： 0 辆
+,5,清关仓储运输框架（样例）,DEMO-NEXT-PARTIAL,DEMO-NEXT-PARTIALSERVICE,华远汽车贸易（样例）,物流服务,SOCT · 销售,SRV · 服务贸易,已确认,—,本次关联范围： 0 辆
+,6,车辆采购及销售框架（样例）,DEMO-NEXT-COMPLETE,DEMO-NEXT-COMPLETEPURCHASE,海外汽车供应商（样例）,车辆采购,POCT · 采购,GOODS · 商品贸易,草稿,—,本次关联范围： 0 辆
+,7,车辆采购及销售框架（样例）,DEMO-NEXT-COMPLETE,DEMO-NEXT-COMPLETESALE,华远汽车贸易（样例）,国内销售,SOCT · 销售,GOODS · 商品贸易,草稿,—,本次关联范围： 0 辆
+,8,清关仓储运输框架（样例）,DEMO-NEXT-COMPLETE,DEMO-NEXT-COMPLETESERVICE,华远汽车贸易（样例）,物流服务,SOCT · 销售,SRV · 服务贸易,草稿,—,本次关联范围： 0 辆

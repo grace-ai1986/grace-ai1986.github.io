@@ -1,0 +1,3 @@
+﻿,业务记录,类型,提单／订单,VIN／本次范围,业务日期,单据状态,备注,办理与明细
+,索赔办理记录,索赔案件,DEMO-OPS-BILL DEMO-OPS-ORDER,SALDMP000A0000001,2026-09-15T10:00,索赔准备,,归档 继续办理 查看原记录
+,DEMO-NEXT-inventory_claim-Complete,索赔案件,DEMO-NEXT-COMPLETE,SALDEM000A0000009、SALDEM000A0000010,2026-10-02T09:00:00,草稿,索赔准备草稿,归档 查看原记录
