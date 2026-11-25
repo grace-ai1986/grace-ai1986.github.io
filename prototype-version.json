@@ -1,9 +1,11 @@
 {
   "prototype": "current-working-prototype",
   "phase1Version": "phase1-v1.8",
-  "sourceCommit": "4c616b2",
-  "publishedAt": "2026-11-18T02:36:40.132928+00:00",
+  "sourceBaseCommit": "d27dac64ba96a153600c2d9cee3dd9eee81a7c12",
+  "staticSha256": "d48ea724a4f8cdfe81ec71b7522273164fca922adec93f8ab207ad73ed2138c6",
+  "publishedAt": "2026-11-25T09:32:48+08:00",
   "capturedPages": 147,
+  "staticFiles": 2027,
   "links": {
     "full": "https://grace-ai1986.github.io/",
     "phase1": "https://grace-ai1986.github.io/?phase=1",
