@@ -1,10 +1,10 @@
 {
   "prototype": "current-working-prototype",
-  "phase1Version": "phase1-v1.11",
-  "internalVersion": "internal-v2.70",
+  "phase1Version": "phase1-v1.12",
+  "internalVersion": "internal-v2.71",
   "sourceBaseCommit": "d27dac64ba96a153600c2d9cee3dd9eee81a7c12",
-  "staticSha256": "a4402f514b08af9e4d8d581b721e616a1c74ae75621a3281246a311cb060fc11",
-  "publishedAt": "2026-11-26T13:28:45+08:00",
+  "staticSha256": "edc5ced05e20a8e59f8539b07f16fafde0d36413b42374ee4c8561912375d603",
+  "publishedAt": "2026-11-26T14:17:41+08:00",
   "capturedPages": 147,
   "staticFiles": 2027,
   "links": {
